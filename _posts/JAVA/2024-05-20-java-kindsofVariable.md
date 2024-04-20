@@ -1,11 +1,18 @@
 ---
-layout: post
-title: "kinds of Variable"
-date: 2024-05-20
-excerpt: "다양한 변수들을 이해하고 사용할 수 있다"
-tags: [java]
-comments: true
+title:  "[Java] kinds of Variable" 
+
+categories:
+  -  Java
+tags:
+  - [Java, Programming, coding]
+
+toc: true
+toc_sticky: true
+
+date:  2024-05-20
+last_modified_at:  2024-05-20
 ---
+
 
 ![java.png](..%2Fassets%2Fimg%2Fjava.png)
 
