@@ -1,9 +1,16 @@
 ---
-layout: page
-title: 경력 및 이력사항
-tags: [about]
+title:  "경력 및 이력사항" 
+
+categories:
+  -  Profile
+tags:
+  - [Profile]
+
+toc: true
+toc_sticky: true
+
 date: 2024-04-03
-comments: false
+last_modified_at: 2024-04-03
 ---
 
 ![body3.jpg](/assets/img/body3.jpg)
