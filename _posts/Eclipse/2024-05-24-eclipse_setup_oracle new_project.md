@@ -1,11 +1,17 @@
 ---
-layout: post
-title: "Eclipse_setup_New_project(이클립스 설치 및 새프로젝트 생성)"
+title:  "Eclipse_setup_New_project(이클립스 설치 및 새프로젝트 생성)"
+categories:
+  -  Tool
+tags:
+  - [Eclipse]
+
+toc: true
+toc_sticky: true
+
 date: 2024-05-24
-excerpt: "이클립스 설치 및 새프로젝트 생성"
-tags: [eclipse]
-comments: true
+last_modified_at: 2024-05-24
 ---
+
 
 ## Eclipse
 - 다운로드 경로 :
