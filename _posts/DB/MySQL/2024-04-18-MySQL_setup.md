@@ -1,5 +1,5 @@
 ---
-title:  MySQL 설치"
+title:  "MySQL 설치"
 
 categories:
   -  DB
@@ -14,7 +14,7 @@ last_modified_at: 2024-04-18
 ---
 
 
-![mysql](assets/images/mysql.png)
+![mysql](/assets/images/mysql.png)
 
 
 ## MySQL 이란?
