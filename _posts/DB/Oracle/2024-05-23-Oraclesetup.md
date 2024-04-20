@@ -1,10 +1,16 @@
 ---
-layout: post
-title: "Oracle_setup_setting(오라클 설치 및 셋팅)"
+title:  "Oracle_setup_setting(오라클 설치 및 셋팅)"
+
+categories:
+  -  DB
+tags:
+  - [Server, SQL, DB, Oracle]
+
+toc: true
+toc_sticky: true
+
 date: 2024-05-23
-excerpt: "오라클 설치 및 초기 셋팅"
-tags: [oracle]
-comments: true
+last_modified_at: 2024-05-23
 ---
 
 ![oracle.png](..%2Fassets%2Fimg%2Foracle.png)
