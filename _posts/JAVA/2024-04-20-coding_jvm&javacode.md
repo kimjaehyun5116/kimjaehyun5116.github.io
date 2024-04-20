@@ -1,11 +1,18 @@
 ---
-layout: post
-title: "JVM과 자바 코드"
+title:  "[Java] JVM과 자바 코드" 
+
+categories:
+  -  Java
+tags:
+  - [Java, Programming, coding]
+
+toc: true
+toc_sticky: true
+
 date: 2024-04-20
-excerpt: "JVM이란 무엇인가?"
-tags: [java]
-comments: true
+last_modified_at: 2024-04-20
 ---
+
 ![java.png](..%2Fassets%2Fimg%2Fjava.png)
 
 # **JVM이란 무엇인가?**
