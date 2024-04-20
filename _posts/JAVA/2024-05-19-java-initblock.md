@@ -1,10 +1,16 @@
 ---
-layout: post
-title: "initblock(초기화 블럭)" 
-date: 2024-05-19
-excerpt: "초기화 블럭의 동작 순서를 이해하고 이를 활용하여 인스턴스를 생성할 수 있다"
-tags: [java]
-comments: true
+title:  "[Java] initblock(초기화 블럭)" 
+
+categories:
+  -  Java
+tags:
+  - [Java, Programming, coding]
+
+toc: true
+toc_sticky: true
+
+date:  2024-05-19
+last_modified_at:  2024-05-19
 ---
 
 ![java.png](..%2Fassets%2Fimg%2Fjava.png)
