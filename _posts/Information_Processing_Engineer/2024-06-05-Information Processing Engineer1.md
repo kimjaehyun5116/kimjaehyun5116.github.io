@@ -1,10 +1,16 @@
 ---
-layout: post
-title: "정보처리기사(1과목 소프트웨어 설계)"
+title:  "정보처리기사(1과목 소프트웨어 설계)"
+
+categories:
+  -  Information_Processing_Engineer
+tags:
+  - [정보처리기사]
+
+toc: true
+toc_sticky: true
+
 date: 2024-04-20
-excerpt: "1과목 소프트웨어 설계"
-tags: [정보처리기사]
-comments: true
+last_modified_at: 2024-04-20
 ---
 
 ![정보처리기사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMzA2MTlfMTY2%2FMDAxNjg3MTQ5NzAwNDAw.ypuz7O1nB3m1HXGrghB9f7oBNb8a9aEquqxxiqmg7C4g.BsgTEfuIhphydLReLfkm3hk8ByGzBsPV20sSMARDm6og.PNG.asd5647%2F%25BE%25DF2-20230619-134121.png&type=sc960_832)
