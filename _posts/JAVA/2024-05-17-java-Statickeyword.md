@@ -1,10 +1,16 @@
 ---
-layout: post
-title: "static keyword"
-date: 2024-05-17
-excerpt: "static 키워드에 대해 이해할 수 있다"
-tags: [java]
-comments: true
+title:  "[Java] static keyword" 
+
+categories:
+  -  Java
+tags:
+  - [Java, Programming, coding]
+
+toc: true
+toc_sticky: true
+
+date:  2024-05-17
+last_modified_at:  2024-05-17
 ---
 
 ![java.png](..%2Fassets%2Fimg%2Fjava.png)
