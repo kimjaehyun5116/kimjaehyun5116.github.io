@@ -1,10 +1,16 @@
 ---
-layout: post
-title: "singleton(싱글톤)"
-date: 2024-05-22
-excerpt: "싱글톤 패턴에 대해 이해하고 이를 구현할 수 있다"
-tags: [java]
-comments: true
+title:  "[Java] singleton(싱글톤)" 
+
+categories:
+  -  Java
+tags:
+  - [Java, Programming, coding]
+
+toc: true
+toc_sticky: true
+
+date:  2024-05-22
+last_modified_at:  2024-05-22
 ---
 
 ![java.png](..%2Fassets%2Fimg%2Fjava.png)
