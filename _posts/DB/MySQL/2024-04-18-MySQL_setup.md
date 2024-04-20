@@ -4,7 +4,7 @@ title:  "MySQL 설치"
 categories:
   -  DB
 tags:
-  - [Server, SQL, DB]
+  - [Server, Sql, Db]
 
 toc: true
 toc_sticky: true
