@@ -1,11 +1,18 @@
 ---
-layout: post
-title: "MySQL 설치"
+title:  MySQL 설치"
+
+categories:
+  -  DB
+tags:
+  - [Server, SQL, DB]
+
+toc: true
+toc_sticky: true
+
 date: 2024-04-18
-excerpt: "MySQL을 설치해보자!"
-tags: [mysql]
-comments: true
+last_modified_at: 2024-04-18
 ---
+
 
 ![mysql](https://github.com/kimjaehyun5116/kimjaehyun5116.github.io/assets/163956223/0b0412a2-b39a-4b9a-80c6-30fcea75aba0)
 
