@@ -2,9 +2,9 @@
 title:  "[Java] 문장 출력하기" 
 
 categories:
-  -  Java
+  -  Profile
 tags:
-  - [Java, Programming, coding]
+  - [Profile]
 
 toc: true
 toc_sticky: true
