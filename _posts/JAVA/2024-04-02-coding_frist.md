@@ -1,10 +1,16 @@
 ---
-layout: post
-title: "문장 출력하기"
+title:  "[Java] 문장 출력하기" 
+
+categories:
+  -  Java
+tags:
+  - [Java, Programming, coding]
+
+toc: true
+toc_sticky: true
+
 date: 2024-04-02
-excerpt: "첫 기초연습"
-tags: [java]
-comments: true
+last_modified_at: 2024-04-02
 ---
 
 ![java.png](..%2Fassets%2Fimg%2Fjava.png)
