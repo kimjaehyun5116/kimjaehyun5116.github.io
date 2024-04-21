@@ -9,5 +9,5 @@ sidebar_main: true
 
 ---
 
-{% assign posts = site.categories.ipe %}
+{% assign posts = site.categories.IPE %}
 {% for post in posts %} {% include archive-single2.html type=page.entries_layout %} {% endfor %}
