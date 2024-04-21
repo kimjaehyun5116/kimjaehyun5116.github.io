@@ -105,14 +105,14 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Css" %}
-                        <li><a href="/categories/css" class="">css({{category[1].size}})</a></li>
+                        <li><a href="/categories/css" class="">Css({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "JavaScript" %}
-                        <li><a href="/categories/javascript" class="">javaScript ({{category[1].size}})</a></li>
+                        <li><a href="/categories/javascript" class="">JavaScript ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
@@ -120,7 +120,7 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Eclipse" %}
-                        <li><a href="/categories/eclipse" class="">eclpise ({{category[1].size}})</a></li>
+                        <li><a href="/categories/eclipse" class="">Eclpise ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
@@ -128,7 +128,7 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "IPE" %}
-                        <li><a href="/categories/ipe" class="">필기공부 ({{category[1].size}})</a></li>
+                        <li><a href="/categories/ipe" class="">정처기 필기공부 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
