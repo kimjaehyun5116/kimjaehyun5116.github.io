@@ -2,7 +2,7 @@
 title:  "정보처리기사(1과목 소프트웨어 설계)"
 
 categories:
-  -  Information_Processing_Engineer
+  -  IPE
 tags:
   - [정보처리기사]
 
