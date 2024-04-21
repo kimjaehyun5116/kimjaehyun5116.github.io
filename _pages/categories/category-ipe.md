@@ -1,7 +1,7 @@
 ---
 title: "정보처리기사 필기공부"
 layout: archive
-permalink: /categories/ipe
+permalink: /categories/Ipe
 author_profile: true
 sidebar_main: true
 ---
