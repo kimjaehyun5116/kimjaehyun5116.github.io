@@ -2,7 +2,7 @@
 title:  "MySQL 설치"
 
 categories:
-  -  DB
+  -   MySQL
 tags:
   - [Server, SQL, DB]
 
