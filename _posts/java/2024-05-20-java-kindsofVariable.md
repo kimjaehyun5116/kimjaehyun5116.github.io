@@ -14,7 +14,7 @@ last_modified_at:  2024-05-20
 ---
 
 
-![java.png](..%2Fassets%2Fimg%2Fjava.png)
+![java.png](/assets/images/java.png)
 
 ## kinds of Variable
 - 클래스 영역에 작성하는 변수를 필드라고 한다
