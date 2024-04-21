@@ -1,7 +1,7 @@
 ---
 title: "Oracle"
 layout: archive
-permalink: categories/Oracle
+permalink: categories/oracle
 author_profile: true
 sidebar_main: true
 ---
