@@ -2,7 +2,7 @@
 title:  "Oracle_setup_setting(오라클 설치 및 셋팅)"
 
 categories:
-  -  DB
+  -  Oracle
 tags:
   - [Server, SQL, DB, Oracle]
 
