@@ -1,7 +1,7 @@
 ---
-title: "정보처리기사 시험 준비 Information_Processing_Engineer"
+title: "정보처리기사 필기공부"
 layout: archive
-permalink: /categories/IPE
+permalink: /categories/ipe
 author_profile: true
 sidebar_main: true
 ---
