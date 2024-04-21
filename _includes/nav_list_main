@@ -12,7 +12,7 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Profile" %}
-                        <li><a href="/categories/profile" class="">Profile ({{category[1].size}})</a></li>
+                        <li><a href="/categories/profile" class="">프로필 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
@@ -20,7 +20,7 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Episode" %}
-                        <li><a href="/categories/episode" class="">Episode 주절주절📂 ({{category[1].size}})</a></li>
+                        <li><a href="/categories/episode" class="">Episode 주절주절 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
@@ -121,7 +121,7 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "IPE" %}
-                        <li><a href="/categories/ipe" class="">Information_Processing_Engineer ({{category[1].size}})</a></li>
+                        <li><a href="/categories/ipe" class="">필기공부 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
