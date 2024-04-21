@@ -1,7 +1,7 @@
 ---
-title: "C++ STL & 표준 라이브러리 정리"
+title: "Html"
 layout: archive
-permalink: categories/stl
+permalink: categories/html
 author_profile: true
 sidebar_main: true
 ---
