@@ -1,5 +1,5 @@
 ---
-title: "Information_Processing_Engineer"
+title: "정보처리기사 시험 준비 Information_Processing_Engineer"
 layout: archive
 permalink: /categories/IPE
 author_profile: true
