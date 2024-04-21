@@ -11,7 +11,7 @@
         <span class="nav__sub-title">Profile</span>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "C" %}
+                    {% if category[0] == "Profile" %}
                         <li><a href="/categories/profile" class="">Profile ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
