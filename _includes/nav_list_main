@@ -11,7 +11,7 @@
         <span class="nav__sub-title">Profile</span>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "C" %}
+                    {% if category[0] == "Profile" %}
                         <li><a href="/categories/profile" class="">Profile ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
@@ -20,7 +20,7 @@
         <span class="nav__sub-title">Language</span>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "C" %}
+                    {% if category[0] == "Java" %}
                         <li><a href="/categories/java" class="">Java ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
@@ -73,7 +73,7 @@
             </ul>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "Programmers SQL" %}
+                    {% if category[0] == "Oracl" %}
                         <li><a href="/categories/db" class="">Oracle ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
