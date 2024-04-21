@@ -1,7 +1,7 @@
 ---
-title: "네트워크"
+title: "프로젝트"
 layout: archive
-permalink: categories/network
+permalink: categories/project
 author_profile: true
 sidebar_main: true
 ---
