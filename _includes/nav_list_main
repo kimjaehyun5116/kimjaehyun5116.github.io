@@ -11,17 +11,8 @@
         <span class="nav__sub-title">Profile</span>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "Profile" %}
+                    {% if category[0] == "C" %}
                         <li><a href="/categories/profile" class="">Profile ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
-
-        <span class="nav__sub-title">Profile</span>
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "Project" %}
-                        <li><a href="/categories/Project" class="">Project ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
@@ -75,14 +66,14 @@
         <span class="nav__sub-title">DB</span>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "DB" %}
+                    {% if category[0] == "MySQL" %}
                         <li><a href="/categories/db" class="">MySQL ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "Oracl" %}
+                    {% if category[0] == "Oracle" %}
                         <li><a href="/categories/db" class="">Oracle ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
@@ -91,27 +82,20 @@
         <span class="nav__sub-title">Front-end</span>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "Blog" %}
-                        <li><a href="/categories/Html-css-javaScript" class="">Html-css-javaScript ({{category[1].size}})</a></li>
+                    {% if category[0] == "Html-css-javaScript" %}
+                        <li><a href="/categories/html-css-javascript" class="">Html-css-javaScript ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        <span class="nav__sub-title">Tool</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Eclipse" %}
+                        <li><a href="/categories/tool" class="">eclpise ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
            
-        <span class="nav__sub-title">Html</span>
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "Blog" %}
-                        <li><a href="/categories/blog" class="">Blog Dev ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "Git" %}
-                        <li><a href="/categories/git" class="">Git & Github ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
       </li>
       <li>	
             <br>      
