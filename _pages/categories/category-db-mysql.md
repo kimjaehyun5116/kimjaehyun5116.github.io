@@ -1,7 +1,7 @@
 ---
 title: "MySQL"
 layout: archive
-permalink: categories/mysql
+permalink: categories/MySQL
 author_profile: true
 sidebar_main: true
 ---
