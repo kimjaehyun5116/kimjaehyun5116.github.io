@@ -1,7 +1,7 @@
 ---
 title: "Eclipse"
 layout: archive
-permalink: categories/Eclipse
+permalink: categories/eclipse
 author_profile: true
 sidebar_main: true
 ---

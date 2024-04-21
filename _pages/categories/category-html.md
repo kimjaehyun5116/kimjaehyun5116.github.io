@@ -1,7 +1,7 @@
 ---
 title: "Html"
 layout: archive
-permalink: categories/Html
+permalink: categories/html
 author_profile: true
 sidebar_main: true
 ---
