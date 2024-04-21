@@ -16,6 +16,14 @@
                     {% endif %}
                 {% endfor %}
             </ul>
+        <span class="nav__sub-title">Episode</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Episode" %}
+                        <li><a href="/categories/episode" class="">Episode 주절주절📂 ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
             
         <span class="nav__sub-title">Language</span>
             <ul>
