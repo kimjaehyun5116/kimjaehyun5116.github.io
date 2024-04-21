@@ -1,7 +1,7 @@
 ---
-title: "디자인 패턴"
+title: "Eclipse"
 layout: archive
-permalink: categories/design-pattern
+permalink: categories/eclipse
 author_profile: true
 sidebar_main: true
 ---
