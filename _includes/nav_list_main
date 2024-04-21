@@ -95,7 +95,14 @@
                     {% endif %}
                 {% endfor %}
             </ul>
-           
+           <span class="nav__sub-title">정보처리기사</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "IPE" %}
+                        <li><a href="/categories/ipe" class="">Information_Processing_Engineer ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
       </li>
       <li>	
             <br>      
