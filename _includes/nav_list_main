@@ -82,7 +82,21 @@
         <span class="nav__sub-title">Front-end</span>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "Html-css-javaScript" %}
+                    {% if category[0] == "Html" %}
+                        <li><a href="/categories/html-css-javascript" class="">Html-css-javaScript ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Css" %}
+                        <li><a href="/categories/html-css-javascript" class="">Html-css-javaScript ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "JavaScript" %}
                         <li><a href="/categories/html-css-javascript" class="">Html-css-javaScript ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
