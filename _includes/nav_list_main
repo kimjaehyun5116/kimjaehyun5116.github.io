@@ -82,14 +82,14 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "MySQL" %}
-                        <li><a href="/categories/db" class="">MySQL ({{category[1].size}})</a></li>
+                        <li><a href="/categories/db/MySQL" class="">MySQL ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Oracle" %}
-                        <li><a href="/categories/db" class="">Oracle ({{category[1].size}})</a></li>
+                        <li><a href="/categories/db/Oracle" class="">Oracle ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
