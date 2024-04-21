@@ -13,7 +13,7 @@ date: 2024-04-20
 last_modified_at: 2024-04-20
 ---
 
-![java.png](..%2Fassets%2Fimg%2Fjava.png)
+![java.png](/assets/images/java.png)
 
 # **JVM이란 무엇인가?**
 
