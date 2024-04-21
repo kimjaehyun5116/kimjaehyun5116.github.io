@@ -13,7 +13,7 @@ date:  2024-05-17
 last_modified_at:  2024-05-17
 ---
 
-![java.png](..%2Fassets%2Fimg%2Fjava.png)
+![java.png](/assets/images/java.png)
 
 ## static
 - 정적 메모리 영역에 프로그램이 start 될 때 할당하는 키워드이다
