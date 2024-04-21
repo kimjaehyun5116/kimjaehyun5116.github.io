@@ -1,7 +1,7 @@
 ---
 title: "프로필(Profile)"
 layout: archive
-permalink: categories/Profile
+permalink: categories/profile
 author_profile: true
 sidebar_main: true
 ---

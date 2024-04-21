@@ -1,7 +1,7 @@
 ---
 title: "내 인생의 에피소드"
 layout: archive
-permalink: categories/Episode
+permalink: categories/episode
 author_profile: true
 sidebar_main: true
 ---
