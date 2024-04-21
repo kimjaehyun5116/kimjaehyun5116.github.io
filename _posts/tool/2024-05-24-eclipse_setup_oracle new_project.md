@@ -1,7 +1,7 @@
 ---
 title:  "Eclipse_setup_New_project(이클립스 설치 및 새프로젝트 생성)"
 categories:
-  -  Tool
+  -  eclipse
 tags:
   - [Eclipse]
 
