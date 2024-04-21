@@ -1,7 +1,7 @@
 ---
-title: "VS Code, Visual Studio"
+title: "Information_Processing_Engineer"
 layout: archive
-permalink: /categories/vs
+permalink: /categories/IPE
 author_profile: true
 sidebar_main: true
 ---
