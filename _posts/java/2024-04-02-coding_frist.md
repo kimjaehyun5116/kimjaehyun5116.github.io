@@ -2,7 +2,7 @@
 title:  "[Java] 문장 출력하기" 
 
 categories:
-  -  Java
+  -  java
 tags:
   - [Java, Programming, Coding]
 
