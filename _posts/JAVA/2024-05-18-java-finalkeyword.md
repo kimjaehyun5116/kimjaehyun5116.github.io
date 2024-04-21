@@ -4,7 +4,7 @@ title:  "[Java] final(최종변수)"
 categories:
   -  Java
 tags:
-  - [Java, Programming, coding]
+  - [Java, Programming, Coding]
 
 toc: true
 toc_sticky: true
@@ -13,7 +13,7 @@ date:  2024-05-18
 last_modified_at:  2024-05-18
 ---
 
-![java.png](..%2Fassets%2Fimg%2Fjava.png)
+![java.png](/assets/images/java.png)
 
 ## fianl
 final 은 종단의 의미를 가지는 키워드이다<br>
