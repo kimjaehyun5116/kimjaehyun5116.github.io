@@ -2,9 +2,9 @@
 title:  "[Java] 문장 출력하기" 
 
 categories:
-  -  Java
+  -  java
 tags:
-  - [Java, Programming, coding]
+  - [Java, Programming, Coding]
 
 toc: true
 toc_sticky: true
