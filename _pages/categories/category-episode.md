@@ -1,7 +1,7 @@
 ---
-title: "언리얼 하다 겪은 위기들"
+title: "내 인생의 에피소드"
 layout: archive
-permalink: categories/ue4error
+permalink: categories/episode
 author_profile: true
 sidebar_main: true
 ---
