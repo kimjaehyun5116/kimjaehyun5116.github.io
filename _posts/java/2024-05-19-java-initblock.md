@@ -13,7 +13,7 @@ date:  2024-05-19
 last_modified_at:  2024-05-19
 ---
 
-![java.png](..%2Fassets%2Fimg%2Fjava.png)
+![java.png](/assets/images/java.png)
 
 ## initblock(초기화 블럭)
 - 복잡한 초기화를 수행할 수 있는 블럭을 제공하여, 인스턴스 초기화 블럭과 정적 초기화 블럭으로 구분된다
