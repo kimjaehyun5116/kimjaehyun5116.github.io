@@ -9,8 +9,8 @@ tags:
 toc: true
 toc_sticky: true
 
-date: 2024-04-21
-last_modified_at: 2024-04-21
+date: 2024-04-22
+last_modified_at: 2024-04-22
 ---
 
 ![정보처리기사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMzA2MTlfMTY2%2FMDAxNjg3MTQ5NzAwNDAw.ypuz7O1nB3m1HXGrghB9f7oBNb8a9aEquqxxiqmg7C4g.BsgTEfuIhphydLReLfkm3hk8ByGzBsPV20sSMARDm6og.PNG.asd5647%2F%25BE%25DF2-20230619-134121.png&type=sc960_832)
@@ -116,7 +116,7 @@ last_modified_at: 2024-04-21
 
 ---
 
-> ## 이상현상(Anomaly)
+> ## 42. 이상현상(Anomaly)
 
 - 릴레이션 조작 시 데이터들이 불필요하게 중복되어 예기치 않게 발생하는 곤란한 현상을 의미한다
 - **종류** : 삽입 이상, 삭제 이상, 갱신 이상
