@@ -259,7 +259,10 @@ UI 설계에 도움을 주는 도구
 <br/>
 - 재사용이 가능한 컴포넌트의 개발 또는 상용 컴포넌트들을 조합하여 애플리케이션 개발 생산성과 품질을 높이고, 시스템 유지보수 비용을 최소화할 수 있는 개발 방법 프로세스이다
 - 컴포넌트 단위의 개발 및 조립을 통하여 정보 시스템의 신속한 구축, 변경, 확장의 용이성과 타 시스템과의 호환성을 달성하고자 하는 소프트웨어 공학 프로세스, 방법론 및 기술의 총체적 개념이다
+<br/>
+
 ---
+
 <br/>
 > ## 16. GoF(Gang of Four) 디자인 패턴
 <br/>
@@ -268,7 +271,9 @@ UI 설계에 도움을 주는 도구
 - 구조 : Adapter, Bridge, Composite, Decorator, Facade, Flyweight, Proxy
 - 행위 : Chain of Responsibility, State, Strategy, Visitor, Template Method, Mediator
 - 생성 : Factory Method, Singleton, Prototype, Builder, Abstraction Factory
+  
 <br/>
+
 **디자인 패턴을 사용할 떄의 장, 단점**
 <br/>
 | 구분 | 내용 |
