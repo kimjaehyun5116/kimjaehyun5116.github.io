@@ -37,6 +37,83 @@ last_modified_at:  2024-06-18
 
 > ## Animal, Rabbit, Tiger 클래스를 만들어서 다형성을 사용해보자
 
+**Animal 패키지**
+
+```java
+package section01.polymorphism;
+
+public class Animal {
+    public void eat(){
+        System.out.println("동물이 먹이를 먹습니다");
+    }
+
+    public void run(){
+        System.out.println("동물이 달려갑니다.");
+    }
+
+    public void cry(){
+        System.out.println("동물이 먹습니다.");
+    }
+}
+```
+
+**Rabbit 패키지**
+
+```java
+package section01.polymorphism;
+
+public class Rabbit extends Animal{
+    @Override
+    public void eat() {
+        System.out.println("토끼가 풀을 뜯어먹고 있습니다.");
+    }
+
+    @Override
+    public void run() {
+        System.out.println("토끼가 달려갑니다. 깡총깡총!.");
+    }
+
+    @Override
+    public void cry() {
+        System.out.println("토끼가 울음소리를 냅니다. 끼익~ 끼익~");
+    }
+
+    public void jump(){
+        System.out.println("토끼가 점프합니다 점프!");
+    }
+}
+```
+
+**Tiger 패키지**
+
+```java
+package section01.polymorphism;
+
+public class Tiger extends Animal{
+
+    @Override
+    public void eat() {
+        System.out.println("호랑이는 고리를 뜯어먹고있습니다.");
+    }
+
+    @Override
+    public void run() {
+        System.out.println("호랑이는 왠만하면 달리지 않습니다. 어슬렁~어슬렁~ 걸어갑니다.");
+    }
+
+    @Override
+    public void cry() {
+        System.out.println("호랑이가 고슴도치한테 처맞고 울고있습니다.");
+    }
+
+    public void bite(){
+        System.out.println("호랑이가 물어뜯습니다..");
+    }
+}
+```
+
+**Application1**
+
 ```java
 package section01.polymorphism
 
@@ -129,90 +206,206 @@ public class Applicatio1{
 }
 ```
 
-출력 값
+출력값
+
+```
+동물이 먹이를 먹습니다
+동물이 달려갑니다.
+동물이 먹습니다.
+======================================
+토끼가 풀을 뜯어먹고 있습니다.
+토끼가 달려갑니다. 깡총깡총!.
+토끼가 울음소리를 냅니다. 끼익~ 끼익~
+토끼가 점프합니다 점프!
+======================================
+호랑이는 고리를 뜯어먹고있습니다.
+호랑이는 왠만하면 달리지 않습니다. 어슬렁~어슬렁~ 걸어갑니다.
+호랑이가 고슴도치한테 처맞고 울고있습니다.
+호랑이가 물어뜯습니다..
+======================================
+토끼가 울음소리를 냅니다. 끼익~ 끼익~
+호랑이가 고슴도치한테 처맞고 울고있습니다.
+=============타입 형변확 확인=============
+토끼가 점프합니다 점프!
+호랑이가 물어뜯습니다..
+============instanceof============
+a1이 Tiger 타입인지 확인 : false
+a1이 Rabbit 타입인지 확인 : true
+a1이 Animal 타입인지 확인 : true
+a1이 Object 타입인지 확인 : true
+토끼가 점프합니다 점프!
+```
+
+**Application2**
+
+```java
+package section01.polymorphism;
+
+public class Application2 {
+    public static void main(String[] args) {
+
+        /* 다형성을 적용하여 객체 배열을 만들어 인스턴스 연속처리 할 수 있다. */
+
+        Animal[] animals = new Animal[5];
+        animals[0] = new Rabbit();
+        animals[1] = new Tiger();
+        animals[2] = new Rabbit();
+        animals[3] = new Tiger();
+        animals[4] = new Rabbit();
+
+        /* Animal 클래스가 가지는 메서드를 오버라이딩한 메서드를 호출시 동적 바인딩을 이용할 수 있다. */
+        for (int i = 0; i < animals.length; i++ ) {
+            animals[i].cry();
+        }
+
+        for (int i = 0; i < animals.length; i++ ) {
+
+            if(animals[i] instanceof Rabbit){
+                ((Rabbit)animals[i]).jump();
+
+            }else if(animals[i] instanceof Tiger){
+                ((Tiger)animals[i]).bite();
+            }else{
+                System.out.println("호랑이나 토끼가 아닙니다.");
+            }
+        }
 
 
+    }
+}
+```
+
+출력값
+
+```
+토끼가 울음소리를 냅니다. 끼익~ 끼익~
+호랑이가 고슴도치한테 처맞고 울고있습니다.
+토끼가 울음소리를 냅니다. 끼익~ 끼익~
+호랑이가 고슴도치한테 처맞고 울고있습니다.
+토끼가 울음소리를 냅니다. 끼익~ 끼익~
+토끼가 점프합니다 점프!
+호랑이가 물어뜯습니다..
+토끼가 점프합니다 점프!
+호랑이가 물어뜯습니다..
+토끼가 점프합니다 점프!
+```
+
+**Application3**
+
+```java
+package section01.polymorphism;
+
+public class Application3 {
+
+    public static void main(String[] args) {
+        /* 다형성을 적용하여 매개변수에 활용할 수 있다. */
+        /* 1. 하단에 feed() 메서드 작성 */
+        /* 2. 하단에 feed() 메서드 호출*/
+        Application3 app3 = new Application3();
+
+        Animal animal1 = new Rabbit();
+        Animal animal2 = new Tiger();
+
+        app3.feed(animal1);
+        app3.feed(animal2);
+
+        Rabbit animal3 = new Rabbit();
+        Tiger animal4 = new Tiger();
+
+        app3.feed(animal3);
+        app3.feed(animal4);     //묵시적 형변환
+
+        app3.feed((Animal) animal3);
+        app3.feed((Animal)  animal4);     //명시적 형변환
+
+        app3.feed(new Rabbit());
+        app3.feed(new Tiger());
+    }
+    public void feed(Animal animal){
+
+        animal.eat();
 
 
+    }
 
-**<h3>오버라이딩 성립요건</h3>**
+}
+```
 
-1. 메소드 이름이 동일해야한다
-2. 메소드의 리턴 타입이 동일해야한다
-3. 매개변수 타입, 갯수, 순서가 동일해야 한다
-4. private 메소드는 접근이 불가능하기 때문에 오버라이딩이 불가능하다
-5. final 키워드가 사용된 메소드는 오버라이딩이 불가능하다
-6. 접근제한자는 부모 메소드와 같거나 더 넓은 범위여야한다
-7. 예외처리는 같은 예외거나 더 구체적(하위)인 예외를 처리해야한다
+출력값
+
+```
+토끼가 풀을 뜯어먹고 있습니다.
+호랑이는 고리를 뜯어먹고있습니다.
+토끼가 풀을 뜯어먹고 있습니다.
+호랑이는 고리를 뜯어먹고있습니다.
+토끼가 풀을 뜯어먹고 있습니다.
+호랑이는 고리를 뜯어먹고있습니다.
+토끼가 풀을 뜯어먹고 있습니다.
+호랑이는 고리를 뜯어먹고있습니다.
+```
+
+**Application4**
+
+```java
+package section01.polymorphism;
+
+import java.util.Random;
+
+public class Application4 {
+
+    public static void main(String[] args) {
+        /* 다형성을 적용하여 리턴타입을 활용할 수 있다. */
+        /* 1. getRandomAnimal() 추가 */
+
+        /* 2. getRandomAnimal() 호출 */
+        Application4 app4 = new Application4();
+
+        Animal randomAnimal = app4.getRandomAnimal();
+        randomAnimal.cry();
+
+    }
+
+    public Animal getRandomAnimal(){
+        int random = (int)(Math.random() *2);
+
+        return random == 0? new Rabbit() : new Tiger();
+    }
+}
+```
+
+출력값
+
+```
+호랑이가 고슴도치한테 처맞고 울고있습니다.
+```
 
 ---
 
-예제
+> ## 요약
 
-```java
-package section03.overriding;
+1. Animal, Rabbit, Tiger 클래스
 
-public class SuperClass {
+ - Animal 클래스를 상속받는 Rabbit 과 Tiger 클래스를 정의한다
+ - 각 클래스는 eat(), run(), cry() 메소드를 오버라이딩해서 토끼와 호랑이에 맞게 동작하도록 구현
 
-    public void method(int num){}
+2. Application1 클래스
+ 
+ - main() 메소드에서 Animal, Rabbit, Tiger 객체를 생성하고 메소드를 호출해서 다형성을 확인한다
+ - 부모 클래스 타입으로 자식 클래스의 객체를 참조할 수 있고, instanceof 연산자를 사용해서 객체의 타입을 확인
 
-    private void privateMethod(){}
+3. Application2 클래스
 
-    public final void finalMethod(){}
+ - main() 메소드에서 Animal 배열을 생성하고 Rabbit 과 Tiger 객체를 저장한다
+ - 배열의 각 객체를 반복문으로 순회하면서 cry() 메소드를 호출한다
+ - instanceof 연산자를 사용하여 Rabbit과 Tiger의 추가 메소드를 호출한다
 
-    protected void protectedMethod(){}
+4. Application3 클래스
 
-}
-```
-```java
-package section03.overriding;
+ - feed() 메소드를 생성해서 Animal 타입을 매개변수로 받는다
+ - 다형성을 활용하여 Rabbit 과 Tiger 객체를 매개변수로 전달하여 eat() 메소드를 호출한다
 
-public class SubClass extends SuperClass{
+5. Application4 클래스
 
-    /* 1. 메소드 이름을 변경하면 에러 발생*/
-   /* @Override
-    public void method2(int num) {
-    }*/
+ - getRandomAnimal() 메소드를 생성하여 무작위로 Rabbit 또는 Tiger 객체를 반환한다
+ - getRandomAnimal() 을 호출해서 반환된 객체의 cry() 메소드를 호출한다
 
-    /*2. 메소드의 리턴타입 변경하면 에러발생*/
-/*    @Override
-    public int method(int num) {
-        return 0;
-    }*/
-
-    /*3. 매개변수 갯수나 타입이 변경되면 에러발생*/
-/*    @Override
-    public void method(String num) {}*/
-
-    /*4. 메소드이름, 리턴타입, 매개변수의 갯수, 타입, 순서가 일치할 경우 오버라이딩 성립.*/
-    @Override
-    public void method(int num) {}
-
-    /*5. private 메소드는 오버라이딩 불가 */
-/*    @Override
-    private void privateMethod(){}*/
-
-    /*6. final 메소드 오버라이딩 불가*/
- /*   @Override
-    public final void finalMethod(){}*/
-
-/*    @Override
-    void protectedMethod(){}   //좁은 범위라서 불가능 */
-
-  /*  @Override
-    protected void protectedMethod() { //같은 범위
-    }*/
-
-    @Override
-    public void protectedMethod() {} // 더 넓은 범위로도 가능
-
-    /*참고로 클래스에도  final 키워드를 추가할 수 있는데 이는 상속을 제한하는 키워드이다.(클래스 확장 불가)*/
-}
-```
-
-> ### 요약
-
-`오버라이딩(Overriding)은 객체지향 프로그래밍에서 기존에 정의된 메서드를 서브클래스에서 새로운 내용으로 다시 정의하는 것을 말한다. 
-이는 상속 관계에서 부모 클래스의 메서드를 자식 클래스에서 재정의하여 사용하는 개념이다. 
-오버라이딩을 통해 자식 클래스는 부모 클래스의 동작을 수정하거나 확장할 수 있다. 
-이는 다형성의 중요한 개념 중 하나이며, 코드의 재사용성과 유연성을 높여준다.`
