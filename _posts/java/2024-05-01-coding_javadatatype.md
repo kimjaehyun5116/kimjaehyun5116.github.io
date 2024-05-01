@@ -367,7 +367,7 @@ int[][] twoDimensionalArray = new int[2][2]{{1, 2}, {3, 4}};
 ```java
 static <T> T pick(T a1, T a2) { return a2; }
 public static void main(String[] args) {
-		Serializable d = pick("d", new ArrayList<String());
+		Serializable d = pick("d", new ArrayList<String>());
 }
 ```
 ->추론 알고리즘은 모든 인자와 어울리는 선에서 가장 구체적인 타입을 찾는데, 위 코드를 보면 `pick`메소드의 매개변수는 `T`이고 메소드의 매개변수 `a1,a2` 둘 다 `T`타입이다<br/>
