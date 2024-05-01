@@ -338,7 +338,7 @@ byte c = (byte)10000; //명시적 형변환으로 에러가 발생하지 않는�
 1. **1차원 배열의 선언**
 
 ```java
-int[] oneDimensionalArray = new int[5]{1, 2, 3, 4, 5};
+int[] oneDimensionalArray = {1, 2, 3, 4, 5};
 ```
 
 ![1차원배열의선언](https://oopy.lazyrockets.com/api/v2/notion/image?src=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F538ed38b-76e4-42a7-bb0e-91b0931f7616%2FUntitled.png&blockId=c67efa3b-0c43-47e7-bb66-2ed85df0bfb3)
@@ -347,7 +347,7 @@ int[] oneDimensionalArray = new int[5]{1, 2, 3, 4, 5};
 2. **2차원 배열의 선언**
 
 ```java
-int[][] twoDimensionalArray = new int[2][2]{{1, 2}, {3, 4}};
+int[][] twoDimensionalArray = {{1, 2}, {3, 4}};
 ```
 
 ![2차원배열의선언](https://oopy.lazyrockets.com/api/v2/notion/image?src=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F2bab21a6-2e64-43f2-af46-8bad692013d1%2FUntitled.png&blockId=f3078654-2aa6-4187-bc37-ae530ef83a12)
@@ -476,7 +476,7 @@ Java SE 7 컴파일러에서는 컴파일 되지 않고 에러가 발생하며 �
 그렇기에 Java SE 7 에서는 type witness를 명시해줘야 한다
 
 ```java
-processStringList(Colections.<String>emptyList());
+processStringList(Collections.<String>emptyList());
 ```
 
 하지만, Java SE 8 부터는 위와 같은 경우에도 type witness를 명시해주지 않아도 Targer type을 결정할 때 메소드의 argument도 살피도록 확장되었기 때문에 에러가 발생하지 않는다<br/>
