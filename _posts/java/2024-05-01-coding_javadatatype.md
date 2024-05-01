@@ -347,7 +347,7 @@ int[] oneDimensionalArray = {1, 2, 3, 4, 5};
 2. **2차원 배열의 선언**
 
 ```java
-int[][] twoDimensionalArray = {{1, 2}, {3, 4}};
+int[][] twoDimensionalArray = { {1, 2}, {3, 4} };
 ```
 
 ![2차원배열의선언](https://oopy.lazyrockets.com/api/v2/notion/image?src=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F2bab21a6-2e64-43f2-af46-8bad692013d1%2FUntitled.png&blockId=f3078654-2aa6-4187-bc37-ae530ef83a12)
