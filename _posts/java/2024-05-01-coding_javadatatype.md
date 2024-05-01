@@ -199,8 +199,8 @@ class A {
 
 ```java
 class LottoTicket {
-  public static final LOTTO_PRICE = 1000;
-	...
+  public static final int LOTTO_PRICE = 1000;
+  //...
 }
 public static void main(String[] args) {
   //LottoPrice: 1000
