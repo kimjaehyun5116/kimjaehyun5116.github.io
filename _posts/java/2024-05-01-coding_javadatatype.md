@@ -403,7 +403,6 @@ public static <U> void outputBoxes(java.util.List<Box<U>> boxes) {
     BoxDemo.addBox(Integer.valueOf(30), listOfIntegerBoxes);
     BoxDemo.outputBoxes(listOfIntegerBoxes);
   }
-}
 ```
 
 `(1)` : addBox라는 generic 메소드를 호출할 때 <Integer>type witness와 함께 type parameter를 명시하여 사용할 수 있다
