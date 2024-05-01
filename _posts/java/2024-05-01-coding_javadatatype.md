@@ -25,7 +25,7 @@ last_modified_at: 2024-05-01
 
 ---
 
-**<h3>타입 종류</h3>**
+**타입 종류**
 
 ![타입종류](https://oopy.lazyrockets.com/api/v2/notion/image?src=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fec3d40bb-f47b-496f-b941-99e18088a116%2FUntitled.png&blockId=fe06ce66-d6b7-4140-95d2-1419ed963add)
 
@@ -33,7 +33,7 @@ last_modified_at: 2024-05-01
 
 ---
 
-**<h3>타입 범위</h3>**
+**타입 범위**
 
 ![타입범위](https://oopy.lazyrockets.com/api/v2/notion/image?src=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F41c48468-b97e-4614-a402-6ea73319a83f%2FUntitled.png&blockId=bc2ef5c3-3504-48b1-a2ca-da3ea7d31117)
 
