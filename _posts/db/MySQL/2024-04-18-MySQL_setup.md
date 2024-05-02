@@ -1,14 +1,9 @@
 ---
 title:  "MySQL 설치"
-
-categories:
-  -   MySQL
-tags:
-  - [Server, SQL, DB]
-
+categories: MySQL
+tags: [Server, SQL, DB]
 toc: true
 toc_sticky: true
-
 date: 2024-04-18
 last_modified_at: 2024-04-18
 ---

@@ -1,14 +1,9 @@
 ---
 title:  "정보처리기사(5과목 정보 시스템 구축 관리)"
-
-categories:
-  -  IPE
-tags:
-  - [정보처리기사, 정처기]
-
+categories: IPE
+tags: [정보처리기사, 정처기]
 toc: true
 toc_sticky: true
-
 date: 2024-04-28
 last_modified_at: 2024-04-28
 ---

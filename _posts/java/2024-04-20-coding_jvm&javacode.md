@@ -1,14 +1,9 @@
 ---
 title:  "[Java] JVM과 자바 코드" 
-
-categories:
-  -  Java
-tags:
-  - [Java, Programming, coding]
-
+categories: Java
+tags: [Java, Programming, coding]
 toc: true
 toc_sticky: true
-
 date: 2024-04-20
 last_modified_at: 2024-04-20
 ---

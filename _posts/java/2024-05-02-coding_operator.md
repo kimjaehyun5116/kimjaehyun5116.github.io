@@ -1,14 +1,9 @@
 ---
 title: "[Java] 자바가 제공하는 다양한 연산자"
-
-categories:
-  - Java
-tags:
-  - [Java, Programming, coding]
-
+categories: Java
+tags: [Java, Programming, coding]
 toc: true
 toc_sticky: true
-
 date: 2024-05-02
 last_modified_at: 2024-05-02
 ---

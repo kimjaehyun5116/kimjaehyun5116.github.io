@@ -1,14 +1,9 @@
 ---
 title:  "[Java] interfaceimplements 인터페이스 구현" 
-
-categories:
-  -  Java
-tags:
-  - [Java, Programming, coding]
-
+categories: Java
+tags: [Java, Programming, coding]
 toc: true
 toc_sticky: true
-
 date:  2024-06-20
 last_modified_at:  2024-06-20
 ---

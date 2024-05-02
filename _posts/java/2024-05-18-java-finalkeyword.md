@@ -1,14 +1,9 @@
 ---
 title:  "[Java] final(최종변수)" 
-
-categories:
-  -  Java
-tags:
-  - [Java, Programming, coding]
-
+categories: Java
+tags: [Java, Programming, coding]
 toc: true
 toc_sticky: true
-
 date:  2024-05-18
 last_modified_at:  2024-05-18
 ---

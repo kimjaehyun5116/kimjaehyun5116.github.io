@@ -1,14 +1,9 @@
 ---
 title:  "정보처리기사(1과목 소프트웨어 설계)"
-
-categories:
-  -  IPE
-tags:
-  - [정보처리기사, 정처기]
-
+categories: IPE
+tags: [정보처리기사, 정처기]
 toc: true
 toc_sticky: true
-
 date: 2024-04-20
 last_modified_at: 2024-04-20
 ---

@@ -1,14 +1,9 @@
 ---
 title:  "정보처리기사(4과목 프로그래밍 언어 활용)"
-
-categories:
-  -  IPE
-tags:
-  - [정보처리기사, 정처기]
-
+categories: IPE
+tags: [정보처리기사, 정처기]
 toc: true
 toc_sticky: true
-
 date: 2024-04-26
 last_modified_at: 2024-04-26
 ---

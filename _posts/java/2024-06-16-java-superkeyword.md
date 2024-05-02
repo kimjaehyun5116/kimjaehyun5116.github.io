@@ -1,14 +1,9 @@
 ---
 title:  "[Java] super 키워드" 
-
-categories:
-  -  Java
-tags:
-  - [Java, Programming, coding]
-
+categories: Java
+tags: [Java, Programming, coding]
 toc: true
 toc_sticky: true
-
 date:  2024-06-16
 last_modified_at:  2024-06-16
 ---

@@ -1,14 +1,9 @@
 ---
 title:  "[Java] polymorphism 다형성" 
-
-categories:
-  -  Java
-tags:
-  - [Java, Programming, coding]
-
+categories: Java
+tags: [Java, Programming, coding]
 toc: true
 toc_sticky: true
-
 date:  2024-06-18
 last_modified_at:  2024-06-18
 ---

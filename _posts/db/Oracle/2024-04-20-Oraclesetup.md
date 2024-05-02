@@ -1,14 +1,9 @@
 ---
 title:  "Oracle_setup_setting(오라클 설치 및 셋팅)"
-
-categories:
-  -  Oracle
-tags:
-  - [Server, SQL, DB, Oracle]
-
+categories: Oracle
+tags: [Server, SQL, DB, Oracle]
 toc: true
 toc_sticky: true
-
 date: 2024-04-20
 last_modified_at: 2024-04-20
 ---

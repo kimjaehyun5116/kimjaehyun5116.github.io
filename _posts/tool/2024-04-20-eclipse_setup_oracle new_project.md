@@ -1,13 +1,9 @@
 ---
 title:  "Eclipse_setup_New_project(이클립스 설치 및 새프로젝트 생성)"
-categories:
-  -  Eclipse
-tags:
-  - [Eclipse]
-
+categories: Eclipse
+tags: [Eclipse]
 toc: true
 toc_sticky: true
-
 date: 2024-04-20
 last_modified_at: 2024-04-20
 ---

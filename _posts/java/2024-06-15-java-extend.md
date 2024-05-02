@@ -1,14 +1,9 @@
 ---
 title:  "[Java] 상속" 
-
-categories:
-  -  Java
-tags:
-  - [Java, Programming, coding]
-
+categories: Java
+tags: [Java, Programming, coding]
 toc: true
 toc_sticky: true
-
 date:  2024-06-15
 last_modified_at:  2024-06-15
 ---

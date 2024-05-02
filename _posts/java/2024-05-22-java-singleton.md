@@ -1,14 +1,9 @@
 ---
 title:  "[Java] singleton(싱글톤)" 
-
-categories:
-  -  Java
-tags:
-  - [Java, Programming, coding]
-
+categories: Java
+tags: [Java, Programming, coding]
 toc: true
 toc_sticky: true
-
 date:  2024-05-22
 last_modified_at:  2024-05-22
 ---
