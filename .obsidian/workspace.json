@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/boj/2024-06-25-boj2420.md",
+                "file": "_posts/java/2024-05-02-coding_operator.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/boj/2024-06-25-boj2420.md",
+                "file": "_posts/java/2024-05-02-coding_operator.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/boj/2024-06-25-boj2420.md",
+                "file": "_posts/java/2024-05-02-coding_operator.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/boj/2024-06-25-boj2420.md"
+                "file": "_posts/java/2024-05-02-coding_operator.md"
               }
             }
           },
@@ -155,8 +155,14 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "ecc0cbfa6ba4ad57",
+  "active": "ffad67d0b07b9892",
   "lastOpenFiles": [
+    "_posts/java/2024-05-03-coding_num22.md",
+    "_posts/java/2024-04-20-coding_jvm&javacode.md",
+    "_posts/java/2024-05-02-coding_operator.md",
+    "_posts/java/2024-05-02-coding_num21.md",
+    "_posts/java/2024-05-01-coding_num20.md",
+    "_posts/java/2024-04-30-coding_num19.md",
     "_posts/boj/2024-06-25-boj2420.md",
     "_posts/boj/2024-06-24-boj2753.md",
     "_posts/boj/2024-06-23-boj14681.md",
@@ -178,8 +184,6 @@
     "_posts/information_processing_engineer/2024-04-20-Information Processing Engineer1.md",
     "_posts/information_processing_engineer/2024-04-27-Information Processing Engineer5.md",
     "apple-touch-icon.png",
-    "android-chrome-192x192.png",
-    "_posts/boj/2024-06-22-boj14681.md",
-    "_posts/blog/2024-04-04-first.md"
+    "android-chrome-192x192.png"
   ]
 }

@@ -1,7 +1,10 @@
 ---
-title:  "[Java] JVM과 자바 코드" 
+title: "[Java] 1주차. VM과 자바 코드"
 categories: Java
-tags: [Java, Programming, coding]
+tags:
+  - Java
+  - Programming
+  - coding
 toc: true
 toc_sticky: true
 date: 2024-04-20

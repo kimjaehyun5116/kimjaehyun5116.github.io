@@ -1,7 +1,10 @@
 ---
-title: "[Java] 자바가 제공하는 다양한 연산자"
+title: "[Java] 2주차. 자바가 제공하는 다양한 연산자"
 categories: Java
-tags: [Java, Programming, coding]
+tags:
+  - Java
+  - Programming
+  - coding
 toc: true
 toc_sticky: true
 date: 2024-05-02
