@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/java/2024-05-02-coding_operator.md",
+                "file": "_posts/java/2024-05-01-coding_javadatatype.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/java/2024-05-02-coding_operator.md",
+                "file": "_posts/java/2024-05-01-coding_javadatatype.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/java/2024-05-02-coding_operator.md",
+                "file": "_posts/java/2024-05-01-coding_javadatatype.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/java/2024-05-02-coding_operator.md"
+                "file": "_posts/java/2024-05-01-coding_javadatatype.md"
               }
             }
           },
@@ -155,11 +155,12 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "ffad67d0b07b9892",
+  "active": "ecc0cbfa6ba4ad57",
   "lastOpenFiles": [
-    "_posts/java/2024-05-03-coding_num22.md",
-    "_posts/java/2024-04-20-coding_jvm&javacode.md",
     "_posts/java/2024-05-02-coding_operator.md",
+    "_posts/java/2024-05-01-coding_javadatatype.md",
+    "_posts/java/2024-04-20-coding_jvm&javacode.md",
+    "_posts/java/2024-05-03-coding_num22.md",
     "_posts/java/2024-05-02-coding_num21.md",
     "_posts/java/2024-05-01-coding_num20.md",
     "_posts/java/2024-04-30-coding_num19.md",
@@ -182,7 +183,6 @@
     "_posts/boj/2024-04-20-boj2257.md",
     "_posts/java/2024-04-02-coding_frist.md",
     "_posts/information_processing_engineer/2024-04-20-Information Processing Engineer1.md",
-    "_posts/information_processing_engineer/2024-04-27-Information Processing Engineer5.md",
     "apple-touch-icon.png",
     "android-chrome-192x192.png"
   ]

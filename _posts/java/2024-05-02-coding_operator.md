@@ -1,5 +1,5 @@
 ---
-title: "[Java] 2주차. 자바가 제공하는 다양한 연산자"
+title: "[Java] 3주차. 자바가 제공하는 다양한 연산자"
 categories: Java
 tags:
   - Java
