@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/java/2024-05-01-coding_javadatatype.md",
+                "file": "_posts/java/2024-05-03-coding_switch.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "right": {
     "id": "ff2e2867f51a60e6",
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/java/2024-05-01-coding_javadatatype.md",
+                "file": "_posts/java/2024-05-03-coding_switch.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/java/2024-05-01-coding_javadatatype.md",
+                "file": "_posts/java/2024-05-03-coding_switch.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/java/2024-05-01-coding_javadatatype.md"
+                "file": "_posts/java/2024-05-03-coding_switch.md"
               }
             }
           },
@@ -157,11 +157,12 @@
   },
   "active": "ecc0cbfa6ba4ad57",
   "lastOpenFiles": [
+    "_posts/java/2024-05-03-coding_num22.md",
+    "_posts/java/2024-05-03-coding_switch.md",
     "_posts/java/2024-05-02-coding_operator.md",
     "_posts/java/2024-05-01-coding_javadatatype.md",
     "_posts/java/2024-04-20-coding_jvm&javacode.md",
     "_posts/java/2024-05-01-coding_num20.md",
-    "_posts/java/2024-05-03-coding_num22.md",
     "_posts/java/2024-05-02-coding_num21.md",
     "_posts/java/2024-04-30-coding_num19.md",
     "_posts/boj/2024-06-25-boj2420.md",
@@ -182,7 +183,6 @@
     "_posts/boj/2024-06-05-boj10699.md",
     "_posts/boj/2024-04-20-boj2257.md",
     "_posts/java/2024-04-02-coding_frist.md",
-    "_posts/information_processing_engineer/2024-04-20-Information Processing Engineer1.md",
     "apple-touch-icon.png",
     "android-chrome-192x192.png"
   ]
