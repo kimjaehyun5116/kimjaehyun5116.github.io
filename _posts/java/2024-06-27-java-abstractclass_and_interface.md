@@ -20,5 +20,5 @@ last_modified_at:  2024-06-27
 
 다음과 같이  
 
-![그림 7-1](/assets/images/7-1.png)
+![그림 7-1](/assets/images/ex7-1.png)
 
