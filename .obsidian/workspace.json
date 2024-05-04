@@ -155,14 +155,15 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "ecc0cbfa6ba4ad57",
+  "active": "ffad67d0b07b9892",
   "lastOpenFiles": [
     "_posts/java/2024-05-03-coding_num22.md",
-    "_posts/java/2024-05-03-coding_switch.md",
     "_posts/java/2024-05-02-coding_operator.md",
+    "_posts/java/2024-05-01-coding_num20.md",
+    "_posts/java/2024-05-28-java-init.md",
+    "_posts/java/2024-05-03-coding_switch.md",
     "_posts/java/2024-05-01-coding_javadatatype.md",
     "_posts/java/2024-04-20-coding_jvm&javacode.md",
-    "_posts/java/2024-05-01-coding_num20.md",
     "_posts/java/2024-05-02-coding_num21.md",
     "_posts/java/2024-04-30-coding_num19.md",
     "_posts/boj/2024-06-25-boj2420.md",
@@ -182,7 +183,6 @@
     "_posts/boj/2024-06-06-boj7287.md",
     "_posts/boj/2024-06-05-boj10699.md",
     "_posts/boj/2024-04-20-boj2257.md",
-    "_posts/java/2024-04-02-coding_frist.md",
     "apple-touch-icon.png",
     "android-chrome-192x192.png"
   ]
