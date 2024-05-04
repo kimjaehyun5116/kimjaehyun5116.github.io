@@ -115,3 +115,58 @@ Java
 ---
 
 ## 키보드로 데이터 입력
+
+키보드로 데이터를 입력받을 때 `System.in` 객체를 직접 사용해 입력 스트림을 생성할 수도 있지만, 입력된 데이터를 처리하는 과정이 번거롭다.
+그러나 다음 방식으로 `Scanner`클래스를 통하여 간접적으로 `System.in` 객체를 사용하면 데이터를 쉽게 입력받아 처리할 수 있다.
+
+① 프로그램의 첫 행에 다음을 추가해 `Scanner` 클래스의 경로 이름을 컴파일러에 알린다
+```java
+import java.utill.Scanner;
+```
+② 키보드로 데이터를 입력받으려고 `System.in` 객체와 연결된 `Scanner` 객체를 생성한다
+
+```java
+Scanner in = new Scanner(System.in);
+```
+③ `Scanner` 클래스가 제공하는 다양한 메서드를 이용해 키보드로 데이터를 입력받는다
+
+```java
+int x = in.nextInt();       // 정수를 읽어 x 변수에 대입한다
+```
+
+`Scanner` 클래스가 제공하는 메서드는 키보드로 입력된 값을 공백이나 탭 등 구분자(\t, \f, \r, \n)로 구별해 데이터로 읽어 들인다.
+단, nextLine() 메서드는 행 바꿈 문자('\n')만 구분자로 사용한다
+
+| 메서드 | 반환 타입 |
+|-----|-------|
+|next()|String|
+|nextByte()|byte|
+|nextShort()|short|
+|nextInt()|int|
+|nextLong()|long|
+|nextFloat()|float|
+|nextDouble()|double|
+|nextLine|String|
+
+키보드로 데이터 입력
+
+```java
+improt java.util.Scanner;
+
+public class ScannerDemo {
+  public static void main(String[] args){
+    Scanner in = new Scanner(System.in);        // Scanner 객체를 생성한다
+    
+    int x = in.nextInt();       // 키보드로 입력한 정수 데이터를 변수에 대입한다
+    int y = in.nextInt();
+    System.out.printf("%d * %d은 %d 입니다.\n", x, y, x * y);
+  }
+}
+```
+
+```
+10    // 키보드로 입력한 값이다
+20
+10 * 20은 200입니다
+```
+
