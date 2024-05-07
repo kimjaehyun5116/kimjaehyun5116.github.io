@@ -532,8 +532,8 @@ public class MovableDemo {
 
 ```
 15m 이동 했습니다.
-```
 
+```
 위에서 강제 타입 변환을 그림으로 나타내면 다음과 같다.
 
 ![ex7-14](/assets/images/ex7-14.png)
