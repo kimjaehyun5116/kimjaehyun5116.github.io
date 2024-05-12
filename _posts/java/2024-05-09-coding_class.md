@@ -434,3 +434,162 @@ objectReference.fieldName
 System.out.println("Width of rectOne: "  + rectOne.width);
 System.out.println("Height of rectOne: " + rectOne.height);
 ```
+
+> Attempting to use the simple names width and height from the code in the CreateObjectDemo class doesn't make sense — those fields exist only within an object — and results in a compiler error.
+
+CreateObjectDEmo class 안의 코드에서 단순한 이름 width 나 height 를 사용하려 할 때 해당 field는 객체 내에서만 존재하므로 의미가 없고 컴파일 에러가 발생한다
+
+new 연산자는 객체의 참조를 반환하기 때문에 다음과 같은 문도 가능하다
+
+```java
+int height = new Rectangle().height;
+```
+
+이 프로그램이 실행된 후에는 참조를 어디에도 저장하지 않았기 때문에 Rectangle 에 대한 참조가 더 이상 존재하지 않게 된다. 해당 리소스는 JVM 에서 자유롭게 재활용 가능하다
+
+## 객체의 메서드 호출
+
+```java
+objectReference.methodName(argumentList);
+
+objectReference.methodName();
+```
+
+위와 같이 점연산자를 사용하여 메서드를 호출한다. 그리고 괄호안에 인자를 넣을 수 있고, 인자가 필요없다면 빈칸으로 써도 된다.
+
+그리고 필드를 참조했을 때와 마찬가지로 new 연산자를 써서 참조를 반환하고 그 new 객체의 메서드로부터 값을 바환하게 할 수 있다.
+
+```java
+new Rectangle(100, 50).getArea()
+```
+
+getArea()와 같은 메서드는 값을 반환한다. 값을 반환하는 메서드의 경우, 메서드 호출을 사용할 수 있다. 다음 코드에서는 getArea() 가 areaOfRectangle 변수에 할당이 된다
+
+```java
+int areaOfRectangle = new Rectangle(100, 50).getArea();
+```
+
+> Remember, invoking a method on a particular object is the same as sending a message to that object. In this case, the object that getArea() is invoked on is the rectangle returned by the constructor
+
+특정 객체의 메서드를 호출하는건 객체에게 메시지를 보내는 것과 같다. 이 경우에, getArea()가 호출되는 객체는 생성자가 반환하는 retangle 이다
+
+## 메서드 정의하는 법
+
+`The Java™ Tutorials`의 Defining Methods 를 참고.
+<br><br>
+자바에서 메서드를 다음 코드처럼 정의한다.
+
+```java
+public int add(int a, int b) {
+  return a + b;
+}
+```
+
+method declaration 의 필수 요소에는 리턴타입, 메서드 이름, 괄호(), 바디{} 가 있다
+더 일반적으로 6개 구성요소가 있다
+
+1. Modifiers
+
+  public, private, static 같은 걸 말한다
+  
+2. The return type
+
+  리턴값의 타입 또는 리턴값이 없을 때 void
+  
+3. 메서드 이름
+
+  필드 이름과 비슷하다. 그러나, 살짝 다르다
+  
+4. 괄호안의 파라미터
+
+  파라미터가 없는 경우엔 빈칸으로 남긴다
+  
+5. An exception list
+6. braces 사이의 메서드 바디
+
+  메서드 코드들이 들어가고 지역변수의 선언이 포함된다
+  
+위의 코드에서 `add(int a, int b)`를 `method signature` 라고 한다. 메서드 이름과 파라미터 타입, 이렇게 메서드 선언에서의 두 개의 구성요소로 이루어져 있다
+
+## Overloading Methods
+
+> The Java programming language supports overloading methods, and Java can distinguish between methods with different method signatures. This means that methods within a class can have the same name if they have different parameter lists (there are some qualifications to this that will be discussed in the lesson titled "Interfaces and Inheritance").
+
+메서드 오버로딩을 지원한다. Java는 서로 다른 메서드 시그니쳐로 구별한다. 클래스안에 메서드명이 같아도 파라미터 리스트가 다를 수 있다.
+
+> You cannot declare more than one method with the same name and the same number and type of arguments, because the compiler cannot tell them apart.
+
+같은 메서드명과 같은 수의 인자 타입을 가진 메서드를 한 개 이상 선언할 수 없는데, 컴파일러가 구별하지 못하기 때문이다.
+
+> The compiler does not consider return type when differentiating methods, so you cannot declare two methods with the same signature even if they have a different return type.
+
+컴파일러는 메서드를 구분할 때 리턴타입은 신경안쓰기 때문에 만약 리턴타입이 다르더라도 같은 시그니쳐의 메서드 두 개를 선언할 수 없다.
+
+## 생성자 정의하는 법
+
+`The Java™ Tutorials`의 Providing Constructors for Your Classes 참고
+<br><br>
+
+클래스에는 클래스 청사진으로부터 객체를 만들기 위한 생성자가 포함되어 있다. 생성자 선언은 메서드 선언과 비슷하게 보인다. 하지만, 생성자는 클래스의 이름을 사용하고 리턴타입이 없다. 예를 들어, Car는 한 생성자가 있다.
+
+```java
+public Car(int price, int speed, int gear) {
+price = standardPrice;
+speed = startSpeed;
+gear = startGear;
+}
+```
+
+람보르기니라고 불리는 new Car 객체를 생성하고, new 연산자로 생성자를 호출해본다.
+
+```java
+Car lamborghini = new Car(200000000, 0, 8);
+```
+
+`new Car(200000000, 0, 8)` 는 메모리에 객체를 위한 공간을 생성하고 필드를 초기화한다.
+
+Car 클래스가 오직 하나의 생성자만 갖고있더라도 no-argument constructor를 포함하여 다른 생성자를 가질 수 있다.
+
+```java
+public Car() {
+price = 30000000
+speed = 0
+gear = 6
+}
+```
+
+`Car myCar = new Car();` 는 no-argument constructor를 호출하여 myCar라는 새로운 Car객체를 생성한다.
+
+다른 argument 리스트기 때문에 위의 생성자는 선언되어질 수 있다. 메서드와 마찬가지로 the Java platform은 argument수와 타입에 따라 생성자를 구분한다. 만약 같은 수와 같은 타입의 생성자를 두개 만들어버리면 구분을 할 수 없기 때문에 컴파일 타임 에러가 난다.
+
+> You don't have to provide any constructors for your class, but you must be careful when doing this.
+
+클래스에 어느 생성자를 제공할 필요는 없지만, 조심해야 된다.
+
+> The compiler automatically provides a no-argument, default constructor for any class without constructors. This default constructor will call the no-argument constructor of the superclass.
+
+컴파일러는 생성자가 없는 모든 클래스에 대해 argument가 없는 default constructor를 자동으로 제공한다.
+
+> In this situation, the compiler will complain if the superclass doesn't have a no-argument constructor so you must verify that it does.
+
+이 때, 컴파일러는 superclass가 no-argument constructor가 없다면 경고할 것이므로 반드시 생성자가 있는지 확인해야 한다.
+
+> If your class has no explicit superclass, then it has an implicit superclass of Object, which does have a no-argument constructor.
+
+클래스가 명시적인 superclass가 없다면 no-argument constructor를 가지고 있는 Object 클래스가 명시적인 superclass다.
+
+[!이미지1](https://velog.velcdn.com/images/hansolo/post/6f635d73-14c8-445f-9979-9daaf528ec60/image.png)
+
+[!이미지2](https://velog.velcdn.com/images/hansolo/post/95492873-0a85-4209-890f-25e13ab0c839/image.png)
+
+[!이미지3](https://velog.velcdn.com/images/hansolo/post/f4c5ffe1-6256-4dd3-8cea-6ce8afd5eb55/image.png)
+
+위의 코드는 Car class를 만들고 Car class의 super class인 Traffic class에 기본 생성자가 없을때 어떻게 될지 실험한 것이다. main 메서드에서 Car의 기본 생성자를 호출했을때 결국 Car class의 superclass인 Traffic의 기본 생성자가 없기 때문에 컴파일 타임 에러가 나는 모습을 볼 수 있다.
+
+만약, 따로 superclass를 명시하지 않았다면 Object클래스가 그 역할을 한다. 소스코드를 보면 다음과 같이 쓰여져 있다.
+
+> Every class has Object as a superclass
+
+Object class의 javadoc에선 모든 클래스는 superclass로 Object를 가진다.
+
+[!이미지4](https://velog.velcdn.com/images/hansolo/post/426e69cd-ea1c-4588-be6b-d21156a2da07/image.png)
