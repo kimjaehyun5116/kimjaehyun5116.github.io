@@ -593,3 +593,423 @@ gear = 6
 Object class의 javadoc에선 모든 클래스는 superclass로 Object를 가진다.
 
 [!이미지4](https://velog.velcdn.com/images/hansolo/post/426e69cd-ea1c-4588-be6b-d21156a2da07/image.png)
+
+그리고 Object 클래스 안에는 no-argument constructor 가 있는걸 볼 수 있다
+
+## 메서드, 생성자에 정보 전달하기
+
+`The Java™ Tutorials` 의 Passding Information to a Method or a Constructor 참고
+<br><br>
+
+메서드나 생성자의 선언은 argument의 타입과 수를 선언한다.
+
+다음은 두 과목의 평균을 구하는 메서드이다.
+
+```java
+public class ScoreCalculator {
+
+    public double calculateScore(double score1, double score2, int scoreNumber) {
+        return (score1 + score2) / scoreNumber;
+    }
+
+}
+```
+
+이 메서드는 총 3개의 파라미터가 있다. 첫번째와 두번째는 double형이고 마지막은 int형이다. 파라미터는 메서드 body에 사용되며 런타임에 인수의 값을 취한다.
+
+- parameter: 메서드 선언에서 변수들의 리스트
+- argument: 메서드가 호출될 때 실제 값
+
+**Parameter Types**
+
+파라미터의 타입은 int, double과 같은 primitive type 그리고 배열, 객체같은 reference type 둘 다 쓸 수 있다.
+
+**임의의 인수 수**
+
+메서드가 몇개의 argument를 취할지 모를 때 임의로 인수 수를 지정해줄 수 있다. 배열은 인덱스가 정해져야 되기 때문에 varags를 써서 임의로 지정한다.
+
+```java
+package polygon;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Polygon {
+
+    private List<Point> points;
+
+    public Polygon() {
+        points = new ArrayList<>();
+    }
+
+    public Polygon polygonFrom(Point... corners) {
+        int numberOfSides = corners.length;
+
+        Polygon polygon = new Polygon();
+        for (Point corner : corners) {
+            polygon.addPoint(corner);
+        }
+
+        if (numberOfSides >= 2) {
+            double squareOfSide1 = Math.pow(corners[1].x - corners[0].x, 2)
+                    + Math.pow(corners[1].y - corners[0].y, 2);
+            double lengthOfSide1 = Math.sqrt(squareOfSide1);
+        }
+
+        return polygon;
+    }
+
+    private void addPoint(Point point) {
+        points.add(point);
+    }
+
+}
+```
+
+`polygonFrom`메서드를 보면 varags를 써서 파라미터를 나타냈다. 그 결과 corners에 인덱스를 계속 붙힐 수 있다.
+
+**Parameter Names**
+
+메서드나 생성자에 파라미터를 선언할 때 해당 매개 변수의 이름을 지정한다. 이 이름은 메서드 바디에서 전달된 인수를 참조하는데 사용된다.
+
+파라미터 이름은 scope안에서 유일해야 된다. 같은 메서드나 생성자의 또다른 파라미터의 이름과 같으면 안되고, 매서드나 생성자 안의 local variable의 이름과 같으면 안된다.
+
+파라미터는 class의 field의 이름과 같을 수 있다. 이 경우에 파라미터가 filed를 shadow한다고 말한다. Shadowing fields는 코드를 읽기 어렵게 하고 일반적으로 특정 필드를 설정하는 생성자, 메서드 안에서 사용된다. 예를 들어, 다음과 같이 Circle클래스가 있고 그것의 serOrigin 메서드가 있다고 하자:
+
+```java
+public class Circle {
+private int x, y, radius;
+public void setOrigin(int x, int y) {
+...
+}
+}
+```
+
+Circle 클래스는 세 개의 fields가 있다: x, y, radius. setOrigin 메서드는 필드 중 하나와 이름이 같은 두 개의 파라미터가 있다. 각 메서드의 파라미터는 해당 이름을 공유하는 필드를 shadow한다. 따라서 메서드의 바디안에 단순한 이름 x 또는 y를 사용하면 필드가 아니라 파라미터를 가리킨다. 필드에 접근하려면 특정한 이름을 사용해야한다. 이 특정한 이름을 사용하는 것을 this키워드를 사용하면서 해결한다.
+
+**Passing by Data Type Arguments**
+
+int나 double같은 원시 타입은 value로 메서드에 전달된다. 매개변수 값에대한 모든 변경 사항은 메서드 범위 내에서만 존재한다. 메서드가 return하면 파라미터는 사라지고 매개변수에 대한 모든 변화는 없어진다.
+
+```java
+public class PassPrimitiveByValue {
+
+    public static void main(String[] args) {
+        int value = 10;
+        passMethod(value);
+        System.out.println("value = " + value);
+    }
+
+    public static void passMethod(int value) {
+        value = 100;
+    }
+}
+```
+
+```
+value = 10
+
+process finished with exit code 0
+```
+
+출력하면 위와 같이 value가 10이 출력된다.
+
+**Passing Reference Data Type Arguments**
+
+객체와 같은 참조 데이터 타입 매개변수도 value값으로 메서드에 전달된다. 메서드가 반환할 때 전달된 참조값이 여전히 같은 객체에 참조가 된다. 그러나, 객체의 field들의 value는 적절한 접근 수준이 있는 경우 메서드안에서 변할 수 있다.
+
+```java
+public class Circle {
+int x;
+int y;
+
+    public Circle(int x, int y) {
+        this.x = x;
+        this.y = y;
+    }
+
+    public int getX() {
+        return x;
+    }
+
+    public void setX(int x) {
+        this.x = x;
+    }
+
+    public int getY() {
+        return y;
+    }
+
+    public void setY(int y) {
+        this.y = y;
+    }
+}
+public class PassReferenceByValue {
+
+    public static void main(String[] args) {
+        Circle myCircle = new Circle(1, 2);
+        System.out.println("myCircle.x = " + myCircle.x);
+        System.out.println("myCircle.y = " + myCircle.y);
+
+        System.out.println("----moveCircle----");
+
+        moveCircle(myCircle, 23, 56);
+        System.out.println("myCircle.x = " + myCircle.x);
+        System.out.println("myCircle.y = " + myCircle.y);
+    }
+    
+    public static void moveCircle(Circle circle, int deltaX, int deltaY) {
+        circle.setX(circle.getX() + deltaX);
+        circle.setY(circle.getY() + deltaY);
+
+        circle = new Circle(0, 0);
+    }
+
+}
+```
+
+```
+myCircle.x = 1
+myCircle.y = 2
+----moveCircle----
+myCircle.x = 24
+myCircle.y = 58
+```
+
+moveCircle메서드 안에서 circle에 x=y=0인 새 Circle 객체에 대한 참조가 할당된다. 하지만, 이는 myCircle에 영향을 끼치지 않는다. 객체의 상태(필드값)는 변경될 수 있지만, 메서드에 전달된 원본의 참조 자체를 변경할 수는 없다. 이것은 Call by Value of Reference이다.
+
+**this 키워드 이해하기**
+
+The Java™ Tutorials에 Using the this Keyword 부분 참고
+
+> Within an instance method or a constructor, this is a reference to the current object — the object whose method or constructor is being called.
+
+인스턴스 매서드나 생성자 안에서 this는 매서드나 생성자가 호출되고 있는 현재 객체를 가리킨다.
+
+> You can refer to any member of the current object from within an instance method or a constructor by using this.
+
+this를 사용하여 인스턴스 매서드나 생성자에서부터 현재 객체의 모든 멤버를 참조할 수 있다.
+
+**Using this with a Field**
+
+> The most common reason for using the this keyword is because a field is shadowed by a method or constructor parameter.
+
+대부분 this 키워드를 쓰는 이유는 field가 매서드나 생성자의 파라미터에 의해 가려지기(구분이 안가게끔 하기) 때문이다.
+
+```java
+public class Point {
+public int x = 0;
+public int y = 0;
+
+    // constructor
+    public Point(int a, int b) {
+        x = a;
+        y = b;
+    }
+}
+public class Point {
+public int x = 0;
+public int y = 0;
+
+    //constructor
+    public Point(int a, int b) {
+    	this.x = a;
+        this.y = b;
+    }
+}
+```
+
+생성자의 각 인수는 객체의 필드 중 하나를 가린다. 생성자 내부엔 생성자의 첫번재 인수의 지역 복사본이 있다. Point field x를 참조하려면 그 생성자는 반드시 this.x를 사용해야 한다.
+
+**Using this with a Constructor**
+
+같은 클래스 내에서 또다른 생성자를 호출하기 위해 this 키워드를 사용할 수 있다. explicit constructor invocation 이라고 불린다.
+
+```java
+public class Rectangle {
+private int x, y;
+private int width, height;
+
+    public Rectangle() {
+    	this(0, 0, 1, 1);
+    }
+    
+    public Rectangle(int width, int height) {
+    	this(0, 0, width, height);
+    }
+    
+    public Rectangle(int x, int y, int width, int height) {
+    this.x = x;
+    this.y = y;
+    this.width = width;
+    this.height = height;
+    }
+    ...
+}
+```
+
+각 생성자는 몇몇 또는 모든 rectagle의 멤버 변수를 초기화한다. 생성자는 인수가 초기값을 제공하지 않는 모든 멤버 변수에 대해 기본 값을 제공한다.
+
+예를 들어, no-argument constructor는 0,0좌표에서 1X1 Rectangle을 생성한다. 두 개의 인수를 가진 생성자는 네 개의 인자를 가진 생성자를 호출하여 너비와 높이를 전달하지만 항상 0, 0 좌표를 사용한다. 이 전과 마찬가지로 컴파일러는 인수의 수와 타입에 의거하여 어느 생성자를 호출할지 결정한다.
+
+만약 다른 생성자가 존재하면, 다른 생정자의 호출이 생성자의 첫 번째 줄에 있어야 한다.
+
+## 필드 초기화
+
+보통 필드를 초기화할 때 다음과 같이 필드에 초기화를 한다.
+
+```java
+public class Fields {
+
+	private static int field = 10;
+    
+    public boolean isField = true;
+
+}
+```
+
+그러나, 위의 초기화 방법은 로직(예외 처리, 루프 처리)을 추가하기에는 한계가 있다. 이러한 한계를 극복하기 위해 Java에서 static initialization blocks을 제시한다.
+
+
+**Static Initialization Blocks**
+
+```java
+public class Initialization {
+
+    private static int i;
+
+    static {
+        for (int j = 0; j < 10; j++) {
+            i++;
+        }
+    }
+
+    public static void main(String[] args) {
+        System.out.println(i); // 10
+    }
+
+}
+```
+
+위와 같이 {} 앞에 static만 붙여주고 괄호 안에 로직을 추가해주면 된다.
+
+실제로는 static block보다 private static method를 많이 쓴다.
+
+```java
+public static int num = staticMethod();
+
+private static int staticMethod() {
+return num = 100;
+}
+```
+
+이 private static method는 class variable을 다시 초기화해야할 때 쓸 수 있다.
+
+**Initializing Instance Members**
+
+인스턴스 변수는 보통 생성자 안에서 초기화한다. 생성자 안에서 초기화하는거 말고 두가지 방법이 있다.
+
+**Initializer blocks**
+
+```java
+public boolean isInitialized;
+
+{
+isInitialized = true;
+}
+```
+
+단지, static block에서 static글자만 빼면 된다. 자바 컴파일러는 모든 생성자에 initializer block을 복사한다. 따라서 여러 생성자들이 블록 안의 내용을 공유할 수 있게 된다.
+
+다음 코드는 block과 생성자의 실행 순서를 나타내는 코드이다.
+
+```java
+public class InitializingFields extends SuperInitializingFields {
+
+    static {
+        count++;
+        System.out.println("This is a static block");
+    }
+
+    {
+        count++;
+        System.out.println("This is a instance block");
+    }
+
+    public InitializingFields() {
+        count++;
+        System.out.println("This is a Constructor");
+    }
+
+}
+public class SuperInitializingFields {
+
+    static int count;
+
+    static {
+        count++;
+        System.out.println("This is a super static block");
+    }
+
+    {
+        count++;
+        System.out.println("This is a super instance block");
+    }
+
+    public SuperInitializingFields() {
+        count++;
+        System.out.println("This is a Super Constructor");
+    }
+
+}
+class InitializingFieldsTest {
+
+    @Test
+    void test() {
+        //given && when
+        new InitializingFields();
+        System.out.println("-------------------------------");
+        new InitializingFields();
+
+        //then
+        Assertions.assertThat(InitializingFields.count).isEqualTo(10);
+    }
+
+}
+```
+
+결과는 다음과 같다.
+
+```
+This is a super static block
+This is a static blocs
+This is a super instance block
+This is a Super Constructor
+This is a instance block
+This is a Constructor
+-------------------------------
+This is a super instance block
+This is a Super Constructor
+This is a instance block
+This is a Constructor
+```
+
+super class의 static block
+sub class의 static block
+super class의 instance block
+super class의 constructor
+sub class의 instance block
+sub class의 constructor
+super class의 constructor가 초기화가 되면 sub class가 자동으로 초기화되야 되기 때문에 4번째로 super class의 constructor가 오게 된다.
+
+**final methods**
+
+```java
+private int number = initializeInstanceMethod();
+
+protected final int initializeInstanceMethod(){
+return 1000;
+}
+```
+
+인스턴스 변수 초기화를 위해 method에 final을 붙힐 수도 있다. subclass가 이 초기화 메서드를 재활용할 수 있다.
