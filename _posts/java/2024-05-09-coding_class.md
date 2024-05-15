@@ -1,10 +1,7 @@
 ---
 title: "[Java] 5주차. 클래스"
 categories: Java
-tags:
-  - Java
-  - Programming
-  - coding
+tags: [Java, Programming, coding]
 toc: true
 toc_sticky: true
 date: 2024-05-09
@@ -43,9 +40,9 @@ last_modified_at: 2024-05-09
 
 > A class is the blueprint from which individual objects are created.
 
-클래스는 개별 객체가 만들어지는 청사진이다.
+클래스는 개별 객체가 만들어지는 첫사진이다.
 
-스타벅스에 가서 커피를 주문한다고 하자. 주문서는 다음과 같이 코드로 표현가능하다.
+스타벅스에 가서 커피를 주문한다고 하자. 주문서는 다음과 같이 코드로 표현가능하다
 
 ```java
 package class1;
@@ -53,16 +50,10 @@ package class1;
 public class ClassDemo1 {
   
   public static void main(String[] args) {
-    String coffeeName1 = "카페 아메리카노";
+    String coffeeName1 ="카페 아메리카노";
     String coffeeName1Size = "벤티";
     int coffeeName1Price = 5500;
     int coffeeName1Quantity = 1;
-    
-    String coffeeName2 = "스타벅스 돌체 라떼";
-    String coffeeName2Size = "그란데";
-    int coffeeName2Price = 6400;
-    int coffeeName2Quantity = 1;
-
     System.out.println("커피명 : " + coffeeName1 +
                         ", 사이즈 : " + coffName1Size +
                         ", 가격 : " + coffName1Price +
@@ -72,7 +63,7 @@ public class ClassDemo1 {
                         ", 사이즈 : " + coffeeName2Size +
                         ", 가격 : " + coffeeName2Price +
                         ", 수량 : " + coffeeName2Quantity);
-  }
+    }
 }
 ```
 
@@ -434,3 +425,28 @@ objectReference.fieldName
 System.out.println("Width of rectOne: "  + rectOne.width);
 System.out.println("Height of rectOne: " + rectOne.height);
 ```
+
+> Attempting to use the simple names width and height from the code in the CreateObjectDemo class doesn't make sense — those fields exist only within an object — and results in a compiler error.
+
+CreateObjectDemo class 안의 코드에서 단순한 이름 width나 height를 사용하려 할 때 해당 field는 객체 내에서만 존재하므로 의미가 없고 컴파일 에러가 발생한다.
+
+new 연산자는 객체의 참조를 반환하기 때문에 다음과 같은 문도 가능하다.
+
+```java
+int height = new Rectangle().height;
+```
+
+이 프로그램이 실행된 후에는 참조를 어디에도 저장하지 않았기 때문에 Rectangle에 대한 참조가 더 이상 존재하지 않게 된다. 해당 리소스는 JVM에서 자유롭게 재활용 가능하다.
+
+## 객체의 메서드 호출
+
+```java
+objectReference.methodName(argumentList);
+```
+```java
+objectReference.methodName();
+```
+
+위와 같이 점연산자를 사용하여 메서드를 호출한다. 그리고 괄호안에 인자를 넣을 수 있고, 인자가 필요없다면 빈칸으로 써도 된다.
+
+그리고 필드를 참조했을 때와 마찬가지로 new연산자를 써서 참조를 반환하고 그 new 객체의 메서드로부터 값을 반환하게 할 수 있다
