@@ -450,3 +450,105 @@ objectReference.methodName();
 위와 같이 점연산자를 사용하여 메서드를 호출한다. 그리고 괄호안에 인자를 넣을 수 있고, 인자가 필요없다면 빈칸으로 써도 된다.
 
 그리고 필드를 참조했을 때와 마찬가지로 new연산자를 써서 참조를 반환하고 그 new 객체의 메서드로부터 값을 반환하게 할 수 있다
+
+```java
+new Rectangle(100, 50).getArea()
+```
+
+getArea()와 같은 메서드는 값을 반환한다. 값을 바환하는 메서드의 경우, 메서드 호출을 사용할 수 있다.
+다음 코드에서는 getArea()가 areaOfRectangle 변수에 할당이 된다
+
+```java
+int areaOfRectangle = new Rectangle(100, 50).getArea();
+```
+
+
+> Remember, invoking a method on a particular object is the same as sending a message to that object. In this case, the object that getArea() is invoked on is the rectangle returned by the constructor.
+
+
+특정 객체의 메서드를 호출하는건 객체에게 메시지를 보내는 것과 같다. 이 경우에, getArea()가 호출되는 객체는 생성자가 반환하는 retangle이다.
+
+## 메서드 정의하는 법
+
+`The Java™ Tutorials`의 Defining Methods를 참고
+자바에서 메서드를 다음 코드처럼 정의한다.
+
+```java
+public int add(int a, int b) {
+  return a + b;
+}
+```
+
+method declaration의 필수 요소에는 리턴타입, 메서드 이름, 괄호(), 바디{}가 있다.
+
+더 일반적으로 6개 구성요소가 있다:
+
+1. Modifiers<br>
+  public, private, static같은 걸 말한다.
+2. The return type<br>
+리턴값의 타입 또는 리턴값이 없을 때 void
+3. 메서드 이름<br>
+필드 이름과 비슷하다. 그러나, 살짝 다르다.
+4. 괄호안의 파라미터<br>
+파라미터가 없는 경우엔 빈칸으로 남긴다.
+5. An exception list<br>
+6. braces 사이의 메서드 바디<br>
+메서드 코드들이 들어가고 지역변수의 선언이 포함된다.
+
+위의 코드에서 add(int a, int b)를 method signature라고 한다. 메서드이름과 파라미터 타입, 이렇게 메서드 선언에서의 두 개의 구성요소로 이루어져 있다.
+
+## Overloading Methods
+
+> The Java programming language supports overloading methods, and Java can distinguish between methods with different method signatures. This means that methods within a class can have the same name if they have different parameter lists (there are some qualifications to this that will be discussed in the lesson titled "Interfaces and Inheritance").
+
+메서드 오버로딩을 지원한다. Java 는 서로 다른 메서드 시그니처로 구별한다. 클래스안에 메서드명이 같아도 파라미터 리스트가 다를 수 있다
+
+> You cannot declare more than one method with the same name and the same number and type of arguments, because the compiler cannot tell them apart.
+
+같은 메서드명과 같은 수의 인자 타입을 가진 메서드를 한 개 이상 선언할 수 없는데, 컴파일러가 구별하지 못하기 떄문이다
+
+> The compiler does not consider return type when differentiating methods, so you cannot declare two methods with the same signature even if they have a different return type.
+
+컴파일러는 메서드를 구분할때 리턴타입은 신경안쓰기 떄문에 만약 리턴타입이 다르더라도 같은 시그니처의 메서드 두개를 선언할 수 없다
+
+## 생성자 정의하는법
+
+`The Java™ Tutorials`의 Providing Constructors for Your Classes 참고
+클래스에는 클래스 청사진으로부터 객체를 만들기 위한 생성자가 포함되어 있다. 생성자 선언은 메서드 선언과 비슷하게 보인다. 하지만, 생성자는 클래스의 이름을 사용하고 리턴타입이 없다. 예를 들어, Car는 한 생성자가 있다.
+
+```java
+public Car(int price, int speed, int gear) {
+  price = standardPrice;
+  speed = starSpeed;
+  gear = starGear;
+}
+```
+
+람보르기니라고 불리는 new Car 객체를 생성하고, new 연산자로 생성자를 호출해본다
+
+```java
+Car lamborghini = new Car(200000000, 0, 8);
+```
+
+`new Car(200000000, 0, 8)` 는 메모리에 객체를 위한 공간을 생성하도 필드를 초기화 한다.
+
+Car 클래스가 오직 하나의 생성자만 갖고있더라도 no-argument constructor 를 포함하여 다른 생성자를 가질 수 있다
+
+```java
+public Car() {
+	price = 30000000
+    speed = 0
+    gear = 6
+}
+```
+
+`Car myCar = new Car();` 는 no-argument constructor를 호출하여 myCar라는 새로운 Car객체를 생성한다.
+
+다른 argument 리스트기 때문에 위의 생성자는 선언되어질 수 있다. 메서드와 마찬가지로 the Java platform은 argument수와 타입에 따라 생성자를 구분한다. 만약 같은 수와 같은 타입의 생성자를 두개 만들어버리면 구분을 할 수 없기 때문에 컴파일 타임 에러가 난다.
+
+> You don't have to provide any constructors for your class, but you must be careful when doing this.
+
+클래스에 어느 생성자를 제공할 필요는 없지만, 조심해야 된다.
+
+> The compiler automatically provides a no-argument, default constructor for any class without constructors. This default constructor will call the no-argument constructor of the superclass.
+
