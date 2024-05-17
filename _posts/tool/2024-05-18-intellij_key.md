@@ -8,7 +8,7 @@ date: 2024-05-17
 last_modified_at: 2024-05-17
 ---
 
-![intellij](/assets/images/intellij.png)
+![intellij](/assets/images/Intellij.png)
 
 ## IntelliJ 유용한 단축키
 
@@ -24,4 +24,16 @@ last_modified_at: 2024-05-17
 | Ctrl + U | Super 메소드 / Super 클래스 이동 | Ctrl + Alt + Shift + N |           심볼로 이동           |        Shift + F4         | Jump to Type Source |      윈도우 미지원       |   활성화 창 숨기기   | Alt + 7 |Structure 창 열기|
 | Ctrl + B |         구현부로 이동          |      Alt + ↑ + ↓       |      이전 / 다음 메소드로 이동       |            F12            |     이전 툴창으로 이동      |      윈도우 미지원       |   뒤로 / 앞으로    | Alt + 8 |Service 창 열기|
 ||||||||| Alt + 9 |   Git 창 열기    |
+
+> 디버깅 단축키 (14개)
+
+|    F7     |                 Step Into                 |     Alt + F10     | Run Debugging Actions Show Execution Point |
+|:---------:|:-----------------------------------------:|:-----------------:|:------------------------------------------:|
+|    F8     |                 Step Over                 | Ctrl + Shift + F8 |               Breakpoints 보기               |
+|    F9     |              Resume Program               | Alt + Shift + F7  |              Force Step Into               |
+| Ctrl + F2 |                  디버깅 종료                   | Alt + Shift + F8  |              Force Stop Over               |
+| Ctrl + F5 |                 이전 디버깅 실행                 |    Shift + F8     |                  Step Out                  |
+| Ctrl + F8 |              Break Point 걸기               |      Alt + 5      |               디버깅 창 보기 / 숨기기               |
+| Alt + F8  | Run Debugging Actions Evaluate Expression |      윈도우 미지원      |                 에디더 디버깅 실행                 |
+
 
