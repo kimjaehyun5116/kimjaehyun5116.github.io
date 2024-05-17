@@ -1,14 +1,14 @@
 ---
 title:  [IntelliJ] 유용한 인텔리제이 단축키 모음
 categories: IntelliJ
-tags: [IntelliJ]
+tags: [intellij]
 toc: true
 toc_sticky: true
 date: 2024-05-17
 last_modified_at: 2024-05-17
 ---
 
-![intellij](https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/IntelliJ_IDEA_Icon.svg/1280px-IntelliJ_IDEA_Icon.svg.png)
+![intellij](/assets/images/intellij.png)
 
 ## IntelliJ 유용한 단축키
 
