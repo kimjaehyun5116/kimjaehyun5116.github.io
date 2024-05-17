@@ -59,7 +59,7 @@ last_modified_at: 2024-05-17
 |        Ctrl + R        |     파일 내 키워드 대체     |  Ctrl + Shift + F6   |     타입 일괄 변경     |
 |        Ctrl + Y        |        라인 삭제        |       Ctrl + /       |       주석처리       |
 |     Ctrl + Alt + F     |   Introduce field   |   Shift + Ctrl + /   |      블록주석처리      |
-|     Ctrl + Alt + I     |       다오 인텐트        |         Tab          |       인텐트        |
+|     Ctrl + Alt + I     |       자동 인텐트        |         Tab          |       인텐트        |
 |     Ctrl + Alt + N     |       Inline        |     Shift + Tab      |       역인텐트       |
 |     Ctrl + Alt + O     |     import 최적화      |     Ctrl + Space     |     기본 코드 완성     |
 |     Ctrl + Alt + P     | Introduce parameter | Ctrl + Space + Space | Static 메소드 자동완성  |
@@ -106,10 +106,11 @@ last_modified_at: 2024-05-17
 
 > 9. 실행 단축키 (13개)
 
-|     Ctrl + F      |     최근 디버깅 실행     | Ctrl + Shift + F10 | Run Edit configuration |
-|:-----------------:|:-----------------:|:------------------:|:----------------------:|
-|     Ctrl + F2     |        종료         | Alt + Shift + F10  | Run Edit configuration |
-|     Ctrl + F9     |        빌드         |      Alt + F9      |     Run to cursor      |
-|    Ctrl + Ctrl    |   Run anything    |     Alt + F10      |  Show Execution point  |
-|  Ctrl + Alt + F5  | Attach to process |    Shift + F10     |           실행           |
-| Ctrl + Shift + F9 | Recompile Project |                    |                        |
+|     Ctrl + F      |     최근 디버깅 실행     | Ctrl + Shift + F10 | Run context configuration |
+|:-----------------:|:-----------------:|:------------------:|:-------------------------:|
+|     Ctrl + F2     |        종료         | Alt + Shift + F10  |  Run Edit configuration   |
+|     Ctrl + F9     |        빌드         |      Alt + F9      |       Run to cursor       |
+|    Ctrl + Ctrl    |   Run anything    |     Alt + F10      |   Show Execution point    |
+|  Ctrl + Alt + F5  | Attach to process |    Shift + F10     |            실행             |
+| Ctrl + Shift + F9 | Recompile Project |      Alt + 4       |          실행창 열기           |
+|                   ||      윈도우 미지원       |        에디터 디버깅 실행         |
