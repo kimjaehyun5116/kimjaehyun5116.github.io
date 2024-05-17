@@ -1,5 +1,5 @@
 ---
-title:  [IntelliJ] 유용한 인텔리제이 단축키 모음(win)
+title: "[IntelliJ] 유용한 인텔리제이 단축키 모음(win)"
 categories: Intellij
 tags: [intellij]
 toc: true
