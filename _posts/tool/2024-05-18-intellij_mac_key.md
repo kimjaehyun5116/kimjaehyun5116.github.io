@@ -38,17 +38,17 @@ last_modified_at: 2024-05-17
 
 > ### 3. 코드 생성 단축키 (19개)
 
-|    ⌃ + O    |           Override 메소드 자동완성           |     ⌥ + ⌘ + /     |         블록 주석 처리         |
-|:-----------:|:-------------------------------------:|:-----------------:|:------------------------:|
-|    ⌃ + I    |          Implement 메소드 자동완성           |   ⇧ + ⌘ + Enter   |   Statement completion   |
-|  ⌥ + ⌘ + J  |      Surround with live template      |     ⌥ + Enter     |           퀵픽스            |
-|  ⌥ + ⌘ + L  |             Reformat code             |     ⌃ + Space     |         기본 자동 완성         |
-|  ⌥ + ⌘ + T  |             Surround with             | ⌘ + Space + space |     Static 메소드 자동완성      |
-|    ⌘ + N    |                 코드 생성                 |   ⌃ + ⇧ + Space   |        스마트 자동 완성         |
-|    ⌃ + J    |                라이브 템플릿                |       prsf        |   Private Static Final   |
-| psvm + main | Public Static Void Main(String[] Arg) |        prf        |   Public Static Final    |
-|    sout     |         System.out.println()          |       const       | Private Static Final Int |
-|  ⌘ + /   |                 주석 처리                 |                   |                          |
+|    ⌃ + O     |           Override 메소드 자동완성           |     ⌥ + ⌘ + /     |         블록 주석 처리         |
+|:------------:|:-------------------------------------:|:-----------------:|:------------------------:|
+|    ⌃ + I     |          Implement 메소드 자동완성           |   ⇧ + ⌘ + Enter   |   Statement completion   |
+|  ⌥ + ⌘ + J   |      Surround with live template      |     ⌥ + Enter     |           퀵픽스            |
+|  ⌥ + ⌘ + L   |             Reformat code             |     ⌃ + Space     |         기본 자동 완성         |
+|  ⌥ + ⌘ + T   |             Surround with             | ⌘ + Space + space |     Static 메소드 자동완성      |
+|    ⌘ + N     |                 코드 생성                 |   ⌃ + ⇧ + Space   |        스마트 자동 완성         |
+|    ⌃ + J     |                라이브 템플릿                |       prsf        |   Private Static Final   |
+| psvm or main | Public Static Void Main(String[] Arg) |        prf        |   Public Static Final    |
+|     sout     |         System.out.println()          |       const       | Private Static Final Int |
+|    ⌘ + /     |                 주석 처리                 |                   |                          |
 
 > ### 4. 편집 단축키 (28개)
 

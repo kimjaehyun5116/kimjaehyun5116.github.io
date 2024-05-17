@@ -46,7 +46,7 @@ last_modified_at: 2024-05-17
 |    Ctrl + Alt + T    |             Surround with             | Ctrl + Space + space |     Static 메소드 자동완성      |
 | Ctrl + Shift + Enter |         Statement completion          | Ctrl + Shift + Space |        스마트 자동 완성         |
 |       Ctrl + J       |                라이브 템플릿                |         prsf         |   Private Static Final   |
-|     psvm + main      | Public Static Void Main(String[] Arg) |         prf          |   Public Static Final    |
+|     psvm or main     | Public Static Void Main(String[] Arg) |         prf          |   Public Static Final    |
 |         sout         |         System.out.println()          |        const         | Private Static Final Int |
 |       Ctrl + /       |                 주석 처리                 ||                          |
 
