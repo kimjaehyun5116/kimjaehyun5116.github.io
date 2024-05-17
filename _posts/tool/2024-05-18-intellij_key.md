@@ -1,6 +1,6 @@
 ---
 title:  [IntelliJ] 유용한 인텔리제이 단축키 모음
-categories: IntelliJ
+categories: Intellij
 tags: [intellij]
 toc: true
 toc_sticky: true
