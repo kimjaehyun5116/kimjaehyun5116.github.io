@@ -120,7 +120,7 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Eclipse" %}
-                        <li><a href="/categories/eclipse" class="">Eclpise ({{category[1].size}})</a></li>
+                        <li><a href="/categories/eclipse" class="">Eclipse ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>

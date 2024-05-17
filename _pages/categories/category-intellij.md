@@ -9,5 +9,5 @@ sidebar_main: true
 
 ---
 
-{% assign posts = site.categories.Eclipse %}
+{% assign posts = site.categories.IntelliJ %}
 {% for post in posts %} {% include archive-single2.html type=page.entries_layout %} {% endfor %}
