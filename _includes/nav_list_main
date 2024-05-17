@@ -127,7 +127,7 @@
             <ul>
                 {% for category in site.categories %}
                    {% if category[0] == "IntelliJ" %}
-                       <li><a href="/categories/intellij" class="">Intellij ({{category[1].size}})</a></li>
+                       <li><a href="/categories/intellij" class="">IntelliJ ({{category[1].size}})</a></li>
                    {% endif %}
                 {% endfor %}
             </ul>

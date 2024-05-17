@@ -1,5 +1,5 @@
 ---
-title: "[IntelliJ] 유용한 인텔리제이 단축키 모음(win)"
+title: "[IntelliJ] 유용한 인텔리제이 단축키 모음(Win)"
 categories: IntelliJ
 tags: [IntelliJ]
 toc: true
@@ -10,7 +10,7 @@ last_modified_at: 2024-05-17
 
 ![intellij](/assets/images/Intellij.png)
 
-## IntelliJ 유용한 단축키(win)
+## IntelliJ 유용한 단축키(Win)
 
 > ### 1. 네비게이션 단축키 (41개)
 
