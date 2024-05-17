@@ -1,7 +1,7 @@
 ---
 title: "[IntelliJ] 유용한 인텔리제이 단축키 모음(win)"
-categories: Intellij
-tags: [intellij]
+categories: IntelliJ
+tags: [IntelliJ]
 toc: true
 toc_sticky: true
 date: 2024-05-17
