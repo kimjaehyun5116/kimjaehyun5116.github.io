@@ -29,7 +29,7 @@ static{<br>
 - Application
 
 ```java
-package com.ohgiraffers.section08.initblock;
+package section08.initblock;
 
 public class Application {
     public static void main(String[] args) {
@@ -61,7 +61,7 @@ public class Application {
 - Product
 
 ```java
-package com.ohgiraffers.section08.initblock;
+package section08.initblock;
 
 public class Product {
 

@@ -552,3 +552,134 @@ public Car() {
 
 > The compiler automatically provides a no-argument, default constructor for any class without constructors. This default constructor will call the no-argument constructor of the superclass.
 
+컴파일러는 생성자가 없는 모든 클래스에 대해 argument 가 없는 default constructor 를 자동으로 제공한다
+
+> In this situation, the compiler will complain if the superclass doesn't have a no-argument constructor so you must verify that it does
+
+이 때, 컴파일러는 superclass 가 no-argument constructor 가 없다면 경고할 것이므로 반드시 생성자가 있는지 확인해야 한다
+
+> If your class has no explicit superclass, then it has an implicit superclass of Object, which does have a no-argument constructor.
+
+클래스가 명시적인 superclass 가 없다면 no-argument constructor 를 가지고 있는 Object 클래스가 명시적인 superclass 다.
+
+```java
+
+public class ClassDemo4 {
+
+  public static void main(String[] args) {
+    Car lamborghini = new Car();
+    System.out.println(lamborghini); // class1.Car@452b3a41 
+  }
+}
+```
+
+```java
+public class Traffic {
+  int price;
+  int speed;
+  int gear;
+  
+  public Traffic(int price, int speed, int gear){
+    this.price=price;
+    this.speed=speed;
+    this.gear=gear;
+  }
+}
+```
+
+```java
+public class Car extends Traffic{
+  int price;
+  int speed;
+  int gear;
+}
+```
+
+위의 코드는 Car class 를 만들고 Car class 의 super class 인 Traffic class 에 기본 생성자가 없을 떄 어떻게 될 지 실험한 것이다.
+main 메서드에서 Car 의 기본 생성자를 호출했을때 결국 Car class 의 superclass 인 Traffic 의 기본 생성자가 없기 떄문에 컴파일 타임 에러가 나는 모습을 볼 수 있다.
+
+만약, 따로 superclass 를 명시하지 않았다면 Object 클래스가 그 역할을 한다. 소스코드를 보면 다음과 같이 쓰여 있다.
+
+> Every class has Object as a superclass
+
+Object class 의 javadoc 에선 모든 클래스는 superclass 로 Object 를 가진다
+
+```java
+public class Object {
+
+  @IntringsicCandidate
+  public Object() {
+  }
+}
+```
+
+그리고 Object 클래스 안에는 no-argument constructor 가 있는걸 볼 수 있다
+
+## 메서드, 생성자에 정보 전달하기
+
+`The java™Tutorials` 의 Passding Information to a Method or a Constructor 참고 메서드나 생성자의 선언은 argument 의 타입과 수를 선언한다.
+
+
+다음은 두 과목의 평균을 구하는 메서드이다.
+
+```java
+public class ScoreCalculator {
+  
+  public double calculateScore(double score1, double score2, int scoreNumber) {
+    return (score1 + score2) / scoreNumber;
+  }
+}
+```
+
+이 메서드는 총 3개의 파라미터가 있다. 첫번째와 두번째는 double 형이고 마지막은 int 형이다. 파라미터는 메서드 body에 사용되며 런타임에 인수의 값을 취한다
+
+- parameter:메서드 선언에서 변수들의 리스트
+- argument:메서드가 호출될 때 실제 값
+
+**Parameter Types**
+
+파라미터의 타입은 int, double 과 같은 primitive type 그리고 배열, 객체같은 reference type 둘 다 쓸 수 있다
+
+**임의의 인수 수**
+
+메서드가 몇 개의 argument 를 취할지 모를 떄 임의의 수를 지정해줄 수 있다. 배열은 인덱스가 정해져야 되기 떄문에 `varags` 를 써써 임의로 지정한다
+
+```java
+package polygon;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Polygon {
+  
+  private List<Point> points;
+  
+  public Polygon() {
+    points = new ArrayList<>();
+  }
+  
+  public Polygon polygonFrom(Point... corners) {
+    int numberOfSides = corners.length;
+    
+    Polygon polygon = new Polygon();
+    for (Point corner : corners) {
+      polygon.addPoint(corner);
+    }
+    
+    if (numberOfSides >= 2) {
+        double squareOfSide1 = Math.pow(corenrs[1].x - corners[0].x, 2)
+          + Math.pow(corners[1].y - corenrs[0].y, 2);
+        double lengthOfSide1 = Math.sqrt(squareOfSide1);
+    }
+    
+    return polygon;
+  }
+  
+  private void addPoint(Point point) {
+        points.add(point);
+  }
+}
+```
+
+`polygonFrom` 메서드를 보면 varags 를 써서 파라미터를 나타냈다. 그 결과 corners 에 인덱스를 계속 붙힐 수 있다
+

@@ -19,7 +19,7 @@ last_modified_at:  2024-05-20
 - Application
 
 ```java
-package com.ohgiraffers.section07.kindsofVariable;
+package section07.kindsofVariable;
 
 public class Application {
     public static void main(String[] args) {
@@ -35,7 +35,7 @@ public class Application {
 - kinds of Variable
 
 ```java
-package com.ohgiraffers.section07.kindsofVariable;
+package section07.kindsofVariable;
 
 public class KindsofVariable { //클래스 영역의 시작
     

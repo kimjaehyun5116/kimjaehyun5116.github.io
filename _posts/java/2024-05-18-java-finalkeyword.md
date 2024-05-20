@@ -27,7 +27,7 @@ final 키워드를 사용할 수 있는 위치가 다양한 편이며 의미가 
 - 그렇지 않으면 compile error 가 발생한다
 
 ```java
-package com.ohgiraffers.section06.finalkeyword;
+package section06.finalkeyword;
 
 public class FinalFieldTest {
 

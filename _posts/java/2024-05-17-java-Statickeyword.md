@@ -23,7 +23,7 @@ last_modified_at:  2024-05-17
 - Application
 
 ```java
-package com.ohgiraffers.section06.statickeyword;
+package section06.statickeyword;
 
 public class Application {
     public static void main(String[] args) {
@@ -65,7 +65,7 @@ public class Application {
 - StaticFieldTest
 
 ```java
-package com.ohgiraffers.section06.statickeyword;
+package section06.statickeyword;
 
 public class StaticFieldTest {
 
@@ -92,7 +92,7 @@ public class StaticFieldTest {
 - StaticMethodTest
 
 ```java
-package com.ohgiraffers.section06.statickeyword;
+package section06.statickeyword;
 
 public class StaticMethodTest {
 
