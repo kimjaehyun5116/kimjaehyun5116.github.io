@@ -1,5 +1,5 @@
 ---
-title:  "[Java] kinds of Variable" 
+title:  "[Java] 변수의 종류 kinds of Variable" 
 categories: Java
 tags: [Java, Programming, coding]
 toc: true
