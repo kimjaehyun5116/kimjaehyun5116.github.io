@@ -10,7 +10,7 @@ last_modified_at:  2024-05-22
 
 ![java.png](/assets/images/java.png)
 
-## singleton-pattern 이란?
+## singleton-pattern[싱글톤] 이란?
 
 - 애플리케이션이 시작될 때 어떤 클래스가 최초 한 번만 메모리를 할당하고 그 메모리에 인스턴스를 만들어서 하나의 인스턴스를 공유해서 사용하며 메모리 낭비를 방지할 수 있게 함(매번 인스턴스 생성하지 않음)
 
