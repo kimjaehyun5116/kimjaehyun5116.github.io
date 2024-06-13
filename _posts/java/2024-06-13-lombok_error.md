@@ -1,7 +1,7 @@
 ---
 title:  "[Java] 롬복(lombok) 에러 (java: java.lang.NoSuchFieldError: Class com.sun.tools.javac.tree.JCTree$JCImport does not have member field 'com.sun.tools.javac.tree.JCTree qualid')"
 categories: Java
-tags: [Java, Programming, Coding]
+tags: [Java, Programming, Coding, Error]
 toc: true
 toc_sticky: true
 date: 2024-06-13
