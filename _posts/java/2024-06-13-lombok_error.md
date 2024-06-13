@@ -1,7 +1,7 @@
 ---
 title:  "[Java] 롬복(lombok) 에러 
 categories: Java
-tags: [Java, Programming, Coding, Error]
+tags: [Java, Programming, Coding]
 toc: true
 toc_sticky: true
 date: 2024-06-13
