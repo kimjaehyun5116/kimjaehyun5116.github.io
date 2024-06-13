@@ -1,5 +1,5 @@
 ---
-title:  "[Java] 롬복(lombok) 에러 (java: java.lang.NoSuchFieldError: Class com.sun.tools.javac.tree.JCTree$JCImport does not have member field 'com.sun.tools.javac.tree.JCTree qualid') 
+title:  "[Java] 롬복(lombok) 에러 
 categories: Java
 tags: [Java, Programming, Coding, Error]
 toc: true
@@ -48,9 +48,12 @@ dependencies {
 > # 추가
 
 java: java.lang.NoSuchFieldError: Class com.sun.tools.javac.tree.JCTree$JCImport does not have member field 'com.sun.tools.javac.tree.JCTree qualid
+
 해당 에러는 롬복 뿐만 아니라 JDK21에서 호환 안 되는 라이브러리가 있을 시 자주 보이는 에러이다. 혹시 JDK 업데이트 중 해당 에러를 발견한 것이라면, 롬복뿐 아니라 다른 라이브러리에 대한 버전 검토를 해야 한다.
 
-참고</ br>
-https://stackoverflow.com/questions/77171270/compilation-error-after-upgrading-to-jdk-21-nosuchfielderror-jcimport-does-n </ br>
+참고
 
-maven repo : https://mvnrepository.com/artifact/org.projectlombok/lombok/1.18.30
+[링크](https://stackoverflow.com/questions/77171270/compilation-error-after-upgrading-to-jdk-21-nosuchfielderror-jcimport-does-n)
+
+
+maven repo : [링크](https://mvnrepository.com/artifact/org.projectlombok/lombok/1.18.30)
