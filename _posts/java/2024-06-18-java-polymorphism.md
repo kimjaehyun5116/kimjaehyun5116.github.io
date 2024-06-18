@@ -10,7 +10,7 @@ last_modified_at:  2024-06-18
 
 ![java.png](/assets/images/java.png)
 
-> # polymorphism (다형성)??
+> # polymorphism (다형성)
 
 - 하나의 인스턴스가 여러가지 타입을 가질 수 있는 것을 의미한다
 - 그렇기 때문에 하나의 타입으로 여러 타입의 인스턴스를 처리할 수 있기도 하고, 하의 메소드 호출로 객체별로 각기 다른 방법으로 동작할 수 있다
