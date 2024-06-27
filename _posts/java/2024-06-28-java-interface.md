@@ -170,7 +170,7 @@ class 자식클래스 extends 부모클래스1, 부모클래스2 {
 ```java
 interface Coin {
   int PENNY = 1, NICKEL = 5, DIME = 10, QUARTER = 25;
-  // int 만 표시되어 있지만, public static final int 이다. 인터페이스의 모든 필드는 public static final 이기 떄문이다
+  // int 만 표시되어 있지만, public static final int 이다 인터페이스의 모든 필드는 public static final 이기 떄문이다
 }
 
 public class Coin1Demo {
